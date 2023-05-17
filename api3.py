@@ -25,28 +25,28 @@ else:
     db = couch[db_name]
 
 
-# 获取所有文档的数据
+# Get data for all documents
 
 
 def get_top_10_word(top=10):
     docs = db.view('_all_docs', include_docs=True)
 
-    # 存储所有文档中的 text 字段的字符串
+    # A string that stores text fields in all documents
     text_strings = []
 
-    # 遍历每个文档
+    # Walk through each document
     for doc in docs:
-        # 获取文档的数据
+        # Get the data for the document
         data = doc['doc']
-        # 提取 text 字段的字符串，并将其添加到 text_strings 列表中
+        # Extract the string for the text field and add it to the text_strings list
         if 'doc' in data and 'text' in data['doc']['data']:
             text = data['doc']['data']['text']
             text_strings.extend(text.split())
 
-    # 统计 text 字段字符串出现的次数
+    # Calculates the number of occurrences of the text field string
     counter = Counter(text_strings)
 
-    # 找到出现次数最多的字符串
+    # Find the string that appears the most times
     top_10 = counter.most_common(top)
     return top_10
 
