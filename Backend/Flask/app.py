@@ -8,6 +8,8 @@ from pysal.explore import esda
 from pysal.lib import weights
 from esda.moran import Moran_Local
 
+from collections import Counter
+
 # authentication
 admin = 'admin'
 password = 'password'
@@ -27,9 +29,38 @@ else:
 
 app = Flask(__name__)
 api = Api(app)
-CORS(app, origins=['http://127.0.0.1:8080', 'http://localhost:8081'])
+CORS(app, origins=['http://127.0.0.1:8080', 'http://localhost:8081', "http://localhost:5173"])
 
 
+def get_top_10_word(top=10):
+    docs = db.view('_all_docs', include_docs=True)
+
+    # A string that stores text fields in all documents
+    text_strings = []
+
+    # Walk through each document
+    for doc in docs:
+        # Get the data for the document
+        data = doc['doc']
+        # Extract the string for the text field and add it to the text_strings list
+        if 'doc' in data and 'text' in data['doc']['data']:
+            text = data['doc']['data']['text']
+            text_strings.extend(text.split())
+
+    # Calculates the number of occurrences of the text field string
+    counter = Counter(text_strings)
+
+    # Find the string that appears the most times
+    top_10 = counter.most_common(top)
+    return top_10
+
+
+class TopWords(Resource):
+    def get(self):
+        return get_top_10_word()
+
+
+api.add_resource(TopWords, '/top_words', '/top_words')
 
 
 # Load the shapefile
@@ -42,7 +73,6 @@ gdf_melbourne.reset_index(drop=True, inplace=True)
 
 # Simplify your dataframe
 simp = gdf_melbourne[["SA2_NAME21", "geometry"]]
-
 
 
 class AverageToxicity(Resource):
