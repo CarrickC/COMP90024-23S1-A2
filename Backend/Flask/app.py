@@ -27,9 +27,14 @@ else:
 
 app = Flask(__name__)
 api = Api(app)
-CORS(app, origins=['http://127.0.0.1:8080', 'http://localhost:8081'])
+#CORS(app, origins=['http://127.0.0.1:8080', 'http://localhost:8081'])
+CORS(app, origins=['*'])
 
-
+############
+############
+#Loading the map information
+############
+############
 
 
 # Load the shapefile
@@ -44,44 +49,56 @@ gdf_melbourne.reset_index(drop=True, inplace=True)
 simp = gdf_melbourne[["SA2_NAME21", "geometry"]]
 
 
+############
+############
+#API for getting GeoJsonData
+############
+############
+
+
+class GeoJsonData(Resource):
+    def get(self):
+        # Assuming that `gdf_melbourne` is a GeoDataFrame with a "geometry" column
+        # Convert the GeoDataFrame to GeoJSON
+        geojson = gdf_melbourne.to_json()
+
+        # Parse the GeoJSON to a dictionary
+        geojson_dict = json.loads(geojson)
+
+        # Return the GeoJSON data
+        return geojson_dict
+
+api.add_resource(GeoJsonData, '/geojson')
+
+
+
+############
+############
+#API for toxicity
+############
+############
+
 
 class AverageToxicity(Resource):
     def get(self):
         # using an existing view
         view = db.view('exp1/suburbtoxicity', group=True)
-        
-        # Convert the GeoDataFrame to GeoJSON
-        geojson = simp.to_json()
-
-        # Parse the GeoJSON to a dictionary
-        geojson_dict = json.loads(geojson)
 
         # Retrieve the view results
         results = {}
-        print("View: ", view)
         for row in view:
-            print("Key: ", row.key)
-            print("Value: ", row.value)
-            
             # calculate the average from the sum and count values
             avg = row.value[0] / row.value[1] if row.value[1] > 0 else 0
 
-            # Get the geometry for the suburb from the GeoJSON
-            geometry = None
-            for feature in geojson_dict['features']:
-                if feature['properties']['SA2_NAME21'] == row.key:
-                    geometry = feature['geometry']
-                    break
-
             results[row.key] = {
                 'average_toxicity': avg,
-                'geometry': geometry
             }
         
         # Return the results as JSON
         return {'data': results}
 
-api.add_resource(AverageToxicity, '/average_toxicity', '/average_toxicity/<id>')
+api.add_resource(AverageToxicity, '/average_toxicity')
+
 
 
 
@@ -110,9 +127,14 @@ class GlobalAutocorrelation(Resource):
         moran = esda.moran.Moran(gdf_melbourne['avg_toxicity'], w)
 
         # Return the results as JSON
-        return {'I': moran.I, 'Expected I': moran.EI, 'p-value': moran.p_sim}
+        return {
+            'I': moran.I,
+            'Expected I': moran.EI,
+            'p-value': moran.p_sim
+        }
 
 api.add_resource(GlobalAutocorrelation, '/global_autocorrelation')
+
 
 
 
@@ -141,12 +163,6 @@ class LocalAutocorrelation(Resource):
         # Calculate Local Moran's I
         moran_loc = Moran_Local(gdf_melbourne['avg_toxicity'], w)
 
-        # Convert the GeoDataFrame to GeoJSON
-        geojson = simp.to_json()
-
-        # Parse the GeoJSON to a dictionary
-        geojson_dict = json.loads(geojson)
-
         # Prepare the results
         results = {}
         for i, row in gdf_melbourne.iterrows():
@@ -157,26 +173,19 @@ class LocalAutocorrelation(Resource):
             ZI = moran_loc.z_sim[i]
             p_value = moran_loc.p_sim[i]
 
-            # Get the geometry for the suburb from the GeoJSON
-            geometry = None
-            for feature in geojson_dict['features']:
-                if feature['properties']['SA2_NAME21'] == suburb:
-                    geometry = feature['geometry']
-                    break
-
             results[suburb] = {
                 'LISA': lisa,
                 'EI': EI,
                 'VI': VI,
                 'ZI': ZI,
                 'p_value': p_value,
-                'geometry': geometry
             }
 
         # Return the results as JSON
         return {'data': results}
 
 api.add_resource(LocalAutocorrelation, '/local_autocorrelation')
+
 
 
 class SignificantLocalAutocorrelation(Resource):
@@ -209,11 +218,182 @@ class SignificantLocalAutocorrelation(Resource):
         # Create a boolean mask for significant local spatial autocorrelation
         significant = moran_loc.p_sim < alpha
 
-        # Convert the GeoDataFrame to GeoJSON
-        geojson = simp.to_json()
+        # Prepare the results
+        results = {}
+        for i, row in gdf_melbourne.iterrows():
+            suburb = row['SA2_NAME21']
+            is_significant = int(significant[i])
 
-        # Parse the GeoJSON to a dictionary
-        geojson_dict = json.loads(geojson)
+            results[suburb] = {
+                'is_significant': is_significant,
+            }
+
+        # Return the results as JSON
+        return {'data': results}
+
+api.add_resource(SignificantLocalAutocorrelation, '/significant_local_autocorrelation')
+
+
+
+
+##################
+##################
+#API for sentiment
+##################
+##################
+
+
+
+
+class AverageSent(Resource):
+    def get(self, label='LABEL_0'):
+        # using an existing view
+        view = db.view('exp1/suburbsent', group_level=2, limit=10)
+
+        response = []
+
+        for row in view:
+            if row.key[1] == label:
+
+                response.append({
+                    "suburb": row.key[0], 
+                    "label": row.key[1], 
+                    "value": row.value,
+                })
+
+                # Limit to the first 10 records for debug purpose
+                if len(response) >= 10:
+                    break
+            
+        return response, 200  # Return with HTTP status 200 (OK)
+
+
+api.add_resource(AverageSent, '/average_sent', '/average_sent/<label>')
+
+
+
+
+
+class GlobalAutocorrelationSentiment(Resource):
+    def get(self, label='LABEL_0'):
+        # Get the rule parameter from the request
+        rule = request.args.get('rule', 'queen')
+
+        # Get the average sentiment for each suburb and the specific label
+        view = db.view('exp1/suburbsent', group_level=2)
+        sentiment_avgs = {row.key[0]: row.value["average"] for row in view if row.key[1] == label}
+        
+
+        # Merge the average sentiment back to the geospatial data
+        gdf_melbourne['avg_sentiment'] = gdf_melbourne['SA2_NAME21'].map(sentiment_avgs)
+        
+        
+        print(gdf_melbourne['avg_sentiment'])
+
+
+        # Fill NA values with 0 (assuming no data is equivalent to 0 sentiment)
+        gdf_melbourne['avg_sentiment'] = gdf_melbourne['avg_sentiment'].fillna(0)
+
+        # Create a spatial weights matrix
+        if rule.lower() == 'rook':
+            w = weights.contiguity.Rook.from_dataframe(gdf_melbourne)
+        else:  # Default to 'queen'
+            w = weights.contiguity.Queen.from_dataframe(gdf_melbourne)
+
+        # Conduct Moran's I test
+        moran = esda.moran.Moran(gdf_melbourne['avg_sentiment'], w)
+
+        # Return the results as JSON
+        return {
+            'I': moran.I,
+            'Expected I': moran.EI,
+            'p-value': moran.p_sim
+        }
+
+api.add_resource(GlobalAutocorrelationSentiment, '/global_autocorrelation_sentiment', '/global_autocorrelation_sentiment/<label>')
+
+
+
+class LocalAutocorrelationSentiment(Resource):
+    def get(self, label='LABEL_0'):
+        # Get the rule parameter from the request
+        rule = request.args.get('rule', 'queen')
+
+        # Get the average sentiment for each suburb
+        view = db.view('exp1/suburbsent', group_level=2)
+        sentiment_avgs = {row.key[0]: row.value["average"] for row in view if row.key[1] == label}
+
+        # Merge the average sentiment back to the geospatial data
+        gdf_melbourne['avg_sentiment'] = gdf_melbourne['SA2_NAME21'].map(sentiment_avgs)
+
+        # Fill NA values with 0 (assuming no data is equivalent to 0 sentiment)
+        gdf_melbourne['avg_sentiment'] = gdf_melbourne['avg_sentiment'].fillna(0)
+
+        # Create a spatial weights matrix
+        if rule.lower() == 'rook':
+            w = weights.contiguity.Rook.from_dataframe(gdf_melbourne)
+        else:  # Default to 'queen'
+            w = weights.contiguity.Queen.from_dataframe(gdf_melbourne)
+
+        # Calculate Local Moran's I
+        moran_loc = Moran_Local(gdf_melbourne['avg_sentiment'], w)
+
+        # Prepare the results
+        results = {}
+        for i, row in gdf_melbourne.iterrows():
+            suburb = row['SA2_NAME21']
+            lisa = moran_loc.Is[i]
+            EI = moran_loc.EI_sim[i]
+            VI = moran_loc.VI_sim[i]
+            ZI = moran_loc.z_sim[i]
+            p_value = moran_loc.p_sim[i]
+
+            results[suburb] = {
+                'LISA': lisa,
+                'EI': EI,
+                'VI': VI,
+                'ZI': ZI,
+                'p_value': p_value,
+            }
+
+        # Return the results as JSON
+        return {'data': results}
+
+api.add_resource(LocalAutocorrelationSentiment, '/local_autocorrelation_sentiment', '/local_autocorrelation_sentiment/<label>')
+
+
+
+
+
+class SignificantLocalAutocorrelationSentiment(Resource):
+    def get(self, label='LABEL_0'):
+        # Get the significance level parameter from the request
+        alpha = float(request.args.get('alpha', 0.05))
+
+        # Get the rule parameter from the request
+        rule = request.args.get('rule', 'queen')
+
+        # Get the average sentiment for each suburb
+        view = db.view('exp1/suburbsent', group_level=2)
+        sentiment_avgs = {row.key[0]: row.value["average"] for row in view if row.key[1] == label}
+
+        # Merge the average sentiment back to the geospatial data
+        gdf_melbourne['avg_sentiment'] = gdf_melbourne['SA2_NAME21'].map(sentiment_avgs)
+
+        # Fill NA values with 0 (assuming no data is equivalent to 0 sentiment)
+        gdf_melbourne['avg_sentiment'] = gdf_melbourne['avg_sentiment'].fillna(0)
+
+        # Create a spatial weights matrix
+        if rule.lower() == 'rook':
+            w = weights.contiguity.Rook.from_dataframe(gdf_melbourne)
+        else:  # Default to 'queen'
+            w = weights.contiguity.Queen.from_dataframe(gdf_melbourne)
+
+        # Calculate Local Moran's I
+        moran_loc = Moran_Local(gdf_melbourne['avg_sentiment'], w)
+
+        # Create a boolean mask for significant local spatial autocorrelation
+        significant = moran_loc.p_sim < alpha
 
         # Prepare the results
         results = {}
@@ -221,22 +401,16 @@ class SignificantLocalAutocorrelation(Resource):
             suburb = row['SA2_NAME21']
             is_significant = int(significant[i])
 
-            # Get the geometry for the suburb from the GeoJSON
-            geometry = None
-            for feature in geojson_dict['features']:
-                if feature['properties']['SA2_NAME21'] == suburb:
-                    geometry = feature['geometry']
-                    break
-
             results[suburb] = {
                 'is_significant': is_significant,
-                'geometry': geometry
             }
 
         # Return the results as JSON
         return {'data': results}
 
-api.add_resource(SignificantLocalAutocorrelation, '/significant_local_autocorrelation')
+api.add_resource(SignificantLocalAutocorrelationSentiment, '/significant_local_autocorrelation_sentiment', '/significant_local_autocorrelation_sentiment/<label>')
+
+
 
 
 
