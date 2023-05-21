@@ -31,7 +31,7 @@ const Map = () => {
         console.log(melbMap);
         console.log(melbData);
 
-        echarts.registerMap("USA", melbMap, {
+        echarts.registerMap("melb", melbMap, {
           Alaska: {
             left: -131,
             top: 25,
@@ -92,15 +92,14 @@ const Map = () => {
               feature: {
                 dataView: { readOnly: false },
                 restore: {},
-                saveAsImage: {},
               },
             },
             series: [
               {
-                name: "USA PopEstimates",
+                name: "Toxicity",
                 type: "map",
                 roam: true,
-                map: "USA",
+                map: "melb",
                 emphasis: {
                   label: {
                     show: true,
@@ -111,9 +110,9 @@ const Map = () => {
             ],
           });
 
-          chartInstance.on("finished", function () {
+          window.onresize = () => {
             chartInstance.resize();
-          });
+          };
         }, 10);
       })
       .catch((e) => {
@@ -125,7 +124,7 @@ const Map = () => {
     <Card>
       <Row>
         <Col span={24}>
-          <div ref={chartRef} style={{ height: "500px", width: "100%" }}></div>;
+          <div ref={chartRef} style={{ height: "500px" }}></div>;
         </Col>
       </Row>
     </Card>

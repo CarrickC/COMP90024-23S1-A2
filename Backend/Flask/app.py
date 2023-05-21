@@ -29,7 +29,7 @@ else:
 
 app = Flask(__name__)
 api = Api(app)
-CORS(app, origins=['http://127.0.0.1:8080', 'http://localhost:8081', "http://localhost:5173"])
+CORS(app, origins="*")
 
 
 def get_top_10_word(top=10):
