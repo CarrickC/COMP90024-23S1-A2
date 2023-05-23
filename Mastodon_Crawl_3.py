@@ -26,10 +26,9 @@ else:
 token = ''
 m = Mastodon(
     # your server here
-    api_base_url=f'https://tictoc.social',
-    access_token="byIX-m2bR6ln7v5jDZDPa0ZCqwV4J6S6ZMTlNCWSACE"
+    api_base_url=f'https://mastodon.au',
+    access_token="byIX-m2bR6ln7v5jDZDPa0ZCqwV4J6S6ZMTlNCWSAC"
 )
-
 
 ##############
 ##############
@@ -54,7 +53,6 @@ import emoji
 
 lemmatizer = WordNetLemmatizer()
 stop_words = set(stopwords.words('english'))
-
 
 class ToxicCommentClassifier:
     def __init__(self, model_name):
@@ -168,8 +166,16 @@ class Listener(StreamListener):
 
         tweet_texts = [re.sub(r'[^a-zA-Z0-9 `~!@#$%^&*()_+-={}\[\]|\\:;"\'<>,.?/]', "", text) for text in tweet_texts]
 
-        # tokenize and remove stop words, punctuation, and apply lemmatization
-        words = [lemmatizer.lemmatize(word.lower()) for text in tweet_texts for word in word_tokenize(text) if word.lower() not in stop_words and word not in string.punctuation]
+
+        # process each tweet text independently
+        tweet_word_lists = []
+
+        for text in tweet_texts:
+            # tokenize and remove stop words, punctuation, and apply lemmatization
+            words = [lemmatizer.lemmatize(word.lower()) for word in word_tokenize(text) if word.lower() not in stop_words and word not in string.punctuation]
+            tweet_word_lists.append(words)
+
+
 
         # calculate toxicity
         toxicities = [toxic_comment_classifier.predict(text) for text in tweet_texts]
@@ -190,7 +196,7 @@ class Listener(StreamListener):
         for i in range(self.buffer_size):
             to_save = {
                 "text": tweet_texts[i],
-                "words": words[i],
+                "words": tweet_word_lists[i],
                 "toxicity": toxicities[i],
                 "sentiment": sentiment_outputs[i],
             }
