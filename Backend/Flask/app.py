@@ -459,8 +459,10 @@ class TopWordCounts(Resource):
         # remove emojis
         tweet_texts = [re.sub(':.*?:', '', emoji.demojize(text)) for text in tweet_texts]
 
-        # tokenize and remove stop words, punctuation, and apply lemmatization
-        words = [lemmatizer.lemmatize(word.lower()) for text in tweet_texts for word in word_tokenize(text) if word.lower() not in stop_words and word not in string.punctuation]
+        # tokenize and remove stop words, punctuation, apply lemmatization, and filter for alphabetical words only
+        words = [lemmatizer.lemmatize(word.lower()) for text in tweet_texts for word in word_tokenize(text) 
+                 if word.lower() not in stop_words and word.isalpha() and word not in string.punctuation]
+
 
         # count occurrences of each word
         word_counts = Counter(words)
@@ -706,6 +708,105 @@ api.add_resource(TotalValueByGender, '/total_value_by_gender')
 api.add_resource(TotalValueByAge, '/total_value_by_age')
 api.add_resource(CrimeData, '/crime_data')
 api.add_resource(RentData, '/rent_data')
+
+
+###############
+###############
+#Mastodon Data
+###############
+###############
+
+
+
+db_M = couch['mastodon_comb']
+
+
+class SentimentDistribution(Resource):
+    def get(self):
+        
+        db_type = request.args.get('db', "mastodon")
+        
+        if db_type == 'mastodon':
+            # using the created view
+            view = db_M.view('sentiment/sentiment_distribution', group=True)
+            
+        else:
+            view = db.view('sentiment/sentiment_distribution', group=True)
+
+        # Retrieve the view results
+        results = {}
+        for row in view:
+            results[row.key] = row.value
+        
+        # Return the results as JSON
+        return {'data': results}
+
+api.add_resource(SentimentDistribution, '/sentiment_distribution')
+
+
+
+
+
+class FollowersScatter(Resource):
+    def get(self):
+        # using the created view
+        view = db_M.view('user_interaction_analysis/followers_sentiment_toxicity')
+
+        # Retrieve the view results
+        results = { 'followers_count': [], 'toxicity': [] }
+        for row in view:
+            results['followers_count'].append(row.key)
+            results['toxicity'].append(row.value['toxicity'])
+
+        # Return the results as JSON
+        return {'data': results}
+
+api.add_resource(FollowersScatter, '/followers_scatter')
+
+
+class FollowingScatter(Resource):
+    def get(self):
+        # using the created view
+        view = db_M.view('user_interaction_analysis/following_sentiment_toxicity')
+
+        # Retrieve the view results
+        results = { 'following_count': [], 'toxicity': [] }
+        for row in view:
+            results['following_count'].append(row.key)
+            results['toxicity'].append(row.value['toxicity'])
+
+        # Return the results as JSON
+        return {'data': results}
+
+api.add_resource(FollowingScatter, '/following_scatter')
+
+
+
+
+
+class TopWordCountsMastodon(Resource):
+    def get(self):
+        # Retrieve all docs
+        num_words = int(request.args.get('num_words', 10))
+        
+        view_results = db_M.view('_all_docs', include_docs=True)
+
+        # Get all the texts
+        texts = [row.doc['text'] for row in view_results if 'text' in row.doc]
+
+        # Tokenize and remove stop words, punctuation, apply lemmatization, and filter for alphabetical words only
+        words = [lemmatizer.lemmatize(word.lower()) for text in texts for word in word_tokenize(text) 
+                 if word.lower() not in stop_words and word.isalpha()]
+
+        # Count occurrences of each word
+        word_counts = Counter(words)
+
+        # Return the 10 most common words
+        return {'data': dict(word_counts.most_common(num_words))}
+
+api.add_resource(TopWordCountsMastodon, '/top_word_counts_mastodon')
+
+
 
 
 
