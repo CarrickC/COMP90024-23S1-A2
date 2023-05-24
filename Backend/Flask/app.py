@@ -155,14 +155,13 @@ class GlobalAutocorrelation(Resource):
 
 api.add_resource(GlobalAutocorrelation, '/global_autocorrelation')
 
-
-
-
-
 class LocalAutocorrelation(Resource):
     def get(self):
         # Get the rule parameter from the request
         rule = request.args.get('rule', 'queen')
+
+        # Get the significance level parameter from the request
+        alpha = float(request.args.get('alpha', 0.05))
 
         # Get the average toxicity for each suburb
         view = db.view('exp1/suburbtoxicity', group=True)
@@ -183,6 +182,9 @@ class LocalAutocorrelation(Resource):
         # Calculate Local Moran's I
         moran_loc = Moran_Local(gdf_melbourne['avg_toxicity'], w)
 
+        # Create a boolean mask for significant local spatial autocorrelation
+        significant = moran_loc.p_sim < alpha
+
         # Prepare the results
         results = {}
         for i, row in gdf_melbourne.iterrows():
@@ -199,12 +201,15 @@ class LocalAutocorrelation(Resource):
                 'VI': VI,
                 'ZI': ZI,
                 'p_value': p_value,
+                'is_significant': int(significant[i])
             }
 
         # Return the results as JSON
         return {'data': results}
 
 api.add_resource(LocalAutocorrelation, '/local_autocorrelation')
+
+
 
 
 
@@ -336,6 +341,9 @@ class LocalAutocorrelationSentiment(Resource):
         # Get the rule parameter from the request
         rule = request.args.get('rule', 'queen')
 
+        # Get the significance level parameter from the request
+        alpha = float(request.args.get('alpha', 0.05))
+
         # Get the average sentiment for each suburb
         view = db.view('exp1/suburbsent', group_level=2)
         sentiment_avgs = {row.key[0]: row.value["average"] for row in view if row.key[1] == label}
@@ -355,6 +363,9 @@ class LocalAutocorrelationSentiment(Resource):
         # Calculate Local Moran's I
         moran_loc = Moran_Local(gdf_melbourne['avg_sentiment'], w)
 
+        # Create a boolean mask for significant local spatial autocorrelation
+        significant = moran_loc.p_sim < alpha
+
         # Prepare the results
         results = {}
         for i, row in gdf_melbourne.iterrows():
@@ -371,15 +382,13 @@ class LocalAutocorrelationSentiment(Resource):
                 'VI': VI,
                 'ZI': ZI,
                 'p_value': p_value,
+                'is_significant': int(significant[i])
             }
 
         # Return the results as JSON
         return {'data': results}
 
 api.add_resource(LocalAutocorrelationSentiment, '/local_autocorrelation_sentiment', '/local_autocorrelation_sentiment/<label>')
-
-
-
 
 
 class SignificantLocalAutocorrelationSentiment(Resource):
