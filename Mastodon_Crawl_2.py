@@ -1,6 +1,6 @@
 from mastodon import Mastodon, StreamListener
 import json, os, couchdb
-
+import time
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -26,7 +26,7 @@ else:
 token = ''
 m = Mastodon(
     # your server here
-    api_base_url=f'https://mastodon.au',
+    api_base_url=f'https://aus.social',
     access_token="QvzGanPOh_FT0LtFwZOWIegId-1KY5CpAzb97h_3M_g"
 )
 
@@ -40,6 +40,7 @@ import re
 from transformers import pipeline
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
+from langdetect import detect
 
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
@@ -68,7 +69,7 @@ class ToxicCommentClassifier:
         text = self.clean_text(text)
         
         # Tokenize the text
-        inputs = self.tokenizer(text, return_tensors='pt')
+        inputs = self.tokenizer(text, return_tensors='pt', truncation=True, max_length=512)
 
         # Get the model's predictions
         outputs = self.model(**inputs)
@@ -81,6 +82,22 @@ class ToxicCommentClassifier:
 
         # Return only the probability of the text being toxic
         return probabilities_list[1]  # Assumes 'toxic' is the second class
+    
+class SentimentAnalyzer:
+    def __init__(self):
+        self.tokenizer = AutoTokenizer.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment-latest")
+        self.model = AutoModelForSequenceClassification.from_pretrained("cardiffnlp/twitter-roberta-base-sentiment-latest")
+        self.labels = ['negative', 'neutral', 'positive']
+
+    def analyze(self, texts):
+        results = []
+        for text in texts:
+            inputs = self.tokenizer(text, return_tensors='pt', truncation=True, padding=True, max_length=512)
+            outputs = self.model(**inputs)
+            probabilities = torch.nn.functional.softmax(outputs.logits, dim=-1).tolist()[0]
+            result = [{"label": self.labels[i], "score": probabilities[i]} for i in range(len(self.labels))]
+            results.append(result)
+        return results
 
 def safe_json_loads(json_string):
     try:
@@ -119,7 +136,7 @@ def is_english(text):
 toxic_comment_classifier = ToxicCommentClassifier("martin-ha/toxic-comment-model")
     
     
-
+sentiment_classifier = SentimentAnalyzer()
     
     
     
@@ -135,20 +152,33 @@ class Listener(StreamListener):
     def __init__(self, *args, **kwargs):
         super(Listener, self).__init__(*args, **kwargs)
         self.tweets_buffer = []
+        self.followers_count_buffer = []
+        self.following_count_buffer = []
         self.buffer_size = 50  # adjustable batch size
 
     # called when receiving new post or status update
     def on_update(self, status):
         json_str = json.dumps(status, indent=2, sort_keys=True, default=str)
         
-        obj = json.loads(json_str)
-        is_bot = obj["account"]["bot"]
-        followers_count = obj["account"]["followers_count"]
-        following_count = obj["account"]["following_count"]
-        text = obj["content"]
+        
+        try:
+        
+            obj = json.loads(json_str)
+            is_bot = obj["account"]["bot"]
+            followers_count = obj["account"]["followers_count"]
+            following_count = obj["account"]["following_count"]
+            text = obj["content"]
+            
+        except:
+            
+            print("Invalid json_str")
+            
+            return
 
         # get all the tweet texts
         self.tweets_buffer.append(text)
+        self.followers_count_buffer.append(followers_count)
+        self.following_count_buffer.append(following_count)
         if len(self.tweets_buffer) < self.buffer_size:
             return
 
@@ -181,27 +211,39 @@ class Listener(StreamListener):
         toxicities = [toxic_comment_classifier.predict(text) for text in tweet_texts]
 
         # using API to calculate sentiment
-        for i in range(10000):  # retry up to n times
-            try:
-                sentiment_outputs = query({"inputs": tweet_texts})
-                break
-            except Exception as e:
-                print(f"API error: {e}, retrying in 5 seconds...")
+        while True:  # retry up to n times
+            
+            sentiment_outputs = sentiment_classifier.analyze(tweet_texts)
+            if type(sentiment_outputs) != list:
+                print("Error occured. Retrying in 5 seconds.")
                 time.sleep(5)
-        else:
-            print("Failed to get response from API after n attempts")
-            return
+            else:
+                break
+
+
+
+
+            
 
         # save all processed tweets to database
         for i in range(self.buffer_size):
-            to_save = {
-                "text": tweet_texts[i],
-                "words": tweet_word_lists[i],
-                "toxicity": toxicities[i],
-                "sentiment": sentiment_outputs[i],
-            }
-            doc_id, doc_rev = db.save(to_save)
-            print(f'Document saved with ID: {doc_id} and revision: {doc_rev}')
+            
+            if is_english(tweet_texts[i]) == True:
+            
+                to_save = {
+                    "text": tweet_texts[i],
+                    "words": tweet_word_lists[i],
+                    "toxicity": toxicities[i],
+                    "sentiment": sentiment_outputs[i],
+                    "followers_count": self.followers_count_buffer[i],
+                    "following_count": self.following_count_buffer[i]
+                    
+                }
+                doc_id, doc_rev = db.save(to_save)
+                print(f'Document saved with ID: {doc_id} and revision: {doc_rev}')
+                
+            else:
+                continue
         
         # reset the buffer
         self.tweets_buffer = []
