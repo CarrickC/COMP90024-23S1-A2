@@ -787,7 +787,7 @@ api.add_resource(FollowingScatter, '/following_scatter')
 class TopWordCountsMastodon(Resource):
     def get(self):
         # Retrieve all docs
-        num_words = int(request.args.get('num_words', 10))
+        num_words = int(request.args.get('num_words', 100))
         
         view_results = db_M.view('_all_docs', include_docs=True)
 
