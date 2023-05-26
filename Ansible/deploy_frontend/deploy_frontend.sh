@@ -1,1 +1,0 @@
-ansible-playbook -i ./hosts deploy_frontend.yml
