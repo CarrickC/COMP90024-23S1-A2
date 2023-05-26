@@ -30,7 +30,7 @@ password = 'password'
 
 # read the configuration file
 config = configparser.ConfigParser()
-config.read('/backend/couchdb_config.ini')
+config.read('couchdb_config.ini')
 
 
 # get the list of CouchDB nodes
@@ -72,7 +72,7 @@ CORS(app, origins=['*'])
 
 
 # Load the shapefile
-gdf = gpd.read_file('SA2_2021_AUST_GDA2020.shp')
+gdf = gpd.read_file('Australia_shapefiles/SA2_2021_AUST_GDA2020.shp')
 
 # Filter for Melbourne
 gdf_melbourne = gdf[gdf['GCC_NAME21'] == 'Greater Melbourne']
