@@ -10,7 +10,7 @@ This folder contains the Ansible Playbooks that automate the setting up and conf
 
 Backend
 
-This directory includes the server-side logic of the application. The latest commit added features such as "tweeter" and "sudo data uploader", which are key functionalities for data handling and communication within the application.
+This directory includes the server-side logic of the application. Included API for our scenarios (sentiment analysis and toxicity analysis). 
 
 SUDO_Data
 
@@ -18,7 +18,7 @@ The SUDO_Data folder is used for storing and handling SUDO data. SUDO data is cr
 
 crawler
 
-The "crawler" directory is dedicated to the web crawling component of this project. Web crawling is a method used to extract data from websites, and in this project, it's used to gather relevant information from external sources.
+The "crawler" directory is dedicated to the web crawling component of this project for harvesting Mastodon data.
 
 frontend/my-app
 
