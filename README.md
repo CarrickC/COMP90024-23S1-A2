@@ -56,7 +56,20 @@ applications, ensuring consistency and reproducibility across various environmen
 need to deploy all environments and applications across four instances, Ansible reduces the risk of errors and
 enhances efficiency. In addition, Ansible can automate various tasks such as updating software packages,
 restarting services, running shell commands, and more. Following is the Ansible playbook for this project:
-![image](https://github.com/CarrickC/COMP90024-23S1-A2/assets/131973111/af381b53-127d-444f-bdc4-8ae5a84df4b7)
+![image](https://github.com/CarrickC/COMP90024-23S1-A2/assets/131973111/0ff74b36-d9c2-4434-b2e2-da1471f0e517)
 
-
-
+Figure : The overview of Ansible playbook
+1. Establish four new instances, each with the appropriate selection of storage volume and security
+groups.
+2. Mounting and configuration of storage volumes on the relative instances.
+3. Clone the necessary script files from GitHub, such as Dockerfiles and YAML files.
+4. Install required dependencies and software packages, including but not limited to pip and Docker.
+5. Deploy and configure CouchDB within Docker on instances 2, 3, and 4, designating instance 4 as the
+master node, and integrate the remaining instances into the CouchDB cluster.
+6. Deploy the Mastodon harvest within Docker on instance 4.
+7. Deploy data analytics scripts (for example, sentiment analysis) and the backend infrastructure within
+Docker on instance 1.
+8. Implement Docker Swarm, designating instance 1 as the manager and instances 2, 3, and 4 as workers.
+Utilize Docker Swarm to create a frontend service.
+To see our project visualization
+View http://172.26.133.136:8081![image](https://github.com/CarrickC/COMP90024-23S1-A2/assets/131973111/03b421da-9355-4aee-a584-cd274da5def1)
