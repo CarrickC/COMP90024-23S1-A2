@@ -1,39 +1,27 @@
-import { Card, Layout, theme } from "antd";
-const { Header, Sider, Content } = Layout;
-
-import Charts from "./components/Charts";
-import Map from "./components/Map";
-import SideNav from "./components/SideNav";
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainLayout from "@/pages/MainLayout";
+import Sentiment from "@/pages/Sentiment";
+import Toxicity from "@/pages/Toxicity";
+import Statistic from "./pages/Statistic";
+import { observer } from "mobx-react-lite";
+import Suburb from "./pages/Statistic";
+
+import "./App.css";
 
 const App = () => {
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
   return (
-    <Layout
-      style={{
-        minHeight: "100vh",
-      }}
-    >
-      <SideNav />
-      <Layout className="site-layout">
-        <Header
-          style={{
-            padding: 0,
-            background: colorBgContainer,
-          }}
-        />
-        <Content
-          style={{
-            margin: "16px 16px 0 16px",
-          }}
-        >
-          <Card>Filters</Card>
-          <Map />
-        </Content>
-      </Layout>
-    </Layout>
+    <BrowserRouter>
+      <div>
+        <Routes>
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<Toxicity />} />
+            <Route path="sentiment" element={<Sentiment />} />
+            <Route path="statistic" element={<Statistic />} />
+          </Route>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 };
 

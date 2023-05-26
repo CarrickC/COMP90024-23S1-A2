@@ -1,0 +1,80 @@
+{
+  "hash": "c6fc402e",
+  "browserHash": "194ff412",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "a8dede06",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "a0a5d550",
+      "needsInterop": true
+    },
+    "antd": {
+      "src": "../../node_modules/antd/es/index.js",
+      "file": "antd.js",
+      "fileHash": "b2fc41c1",
+      "needsInterop": false
+    },
+    "echarts-for-react": {
+      "src": "../../node_modules/echarts-for-react/esm/index.js",
+      "file": "echarts-for-react.js",
+      "fileHash": "a167252c",
+      "needsInterop": false
+    },
+    "axios": {
+      "src": "../../../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "188be3b8",
+      "needsInterop": false
+    },
+    "@ant-design/icons": {
+      "src": "../../node_modules/@ant-design/icons/es/index.js",
+      "file": "@ant-design_icons.js",
+      "fileHash": "ec197814",
+      "needsInterop": false
+    },
+    "echarts": {
+      "src": "../../node_modules/echarts/index.js",
+      "file": "echarts.js",
+      "fileHash": "06beb7bf",
+      "needsInterop": false
+    },
+    "mobx-react-lite": {
+      "src": "../../node_modules/mobx-react-lite/es/index.js",
+      "file": "mobx-react-lite.js",
+      "fileHash": "620604e4",
+      "needsInterop": false
+    },
+    "mobx": {
+      "src": "../../node_modules/mobx/dist/mobx.esm.js",
+      "file": "mobx.js",
+      "fileHash": "53e48cc4",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-YHIQ4YLE": {
+      "file": "chunk-YHIQ4YLE.js"
+    },
+    "chunk-2MRMY2VI": {
+      "file": "chunk-2MRMY2VI.js"
+    },
+    "chunk-HHENKLI2": {
+      "file": "chunk-HHENKLI2.js"
+    },
+    "chunk-BWWHQKAJ": {
+      "file": "chunk-BWWHQKAJ.js"
+    },
+    "chunk-6DDWND5A": {
+      "file": "chunk-6DDWND5A.js"
+    },
+    "chunk-4EOJPDL2": {
+      "file": "chunk-4EOJPDL2.js"
+    }
+  }
+}

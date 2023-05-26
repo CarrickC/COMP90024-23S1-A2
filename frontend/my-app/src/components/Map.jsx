@@ -1,134 +1,121 @@
 // @ts-nocheck
 import React, { useEffect, useRef, useState } from "react";
 import * as echarts from "echarts";
-import { usaMap } from "../data/usa";
 
-import { Row, Col, Card } from "antd";
+import { Row, Col, Card, Spin, Button } from "antd";
+import { SyncOutlined } from "@ant-design/icons";
 
-import EChartsReact from "echarts-for-react";
+import { useStore } from "../stores";
+import { observer } from "mobx-react-lite";
+import { action, autorun, computed } from "mobx";
 
-const Map = () => {
-  const chartRef = useRef(null);
-  const [melbData, setMelbData] = useState([]);
-  const [melbMap, setMelbMap] = useState({});
+import MapForm from "./MapForm";
+import Global from "./Global";
+import { getChartOptions } from "@/utils";
+
+const Map = observer((props) => {
+  let mapInstance = null;
+  const mapRef = useRef(null);
+  const { dataStore } = useStore();
+  const [loading, setLoading] = useState(false);
+
+  const fetchData = dataStore.getFetchData(props.mapType);
+  // const setDataLoaded = dataStore.getSetDataLoaded(props.mapType);
+  // const isDataLoaded = dataStore.getIsDataLoaded(props.mapType);
+
+  const initMap = () => {
+    mapInstance = echarts.getInstanceByDom(mapRef.current);
+    if (!mapInstance) {
+      mapInstance = echarts.init(mapRef.current);
+      let timer = null;
+      const resizeObserver = new ResizeObserver(() => {
+        if (timer) clearTimeout(timer);
+        timer = setTimeout(() => {
+          mapInstance.resize();
+        }, 100);
+      });
+      resizeObserver.observe(mapRef.current);
+    }
+  };
+
+  const updateMap = () => {
+    mapInstance = echarts.getInstanceByDom(mapRef.current);
+    mapInstance.setOption(getChartOptions(props.mapType, dataStore));
+  };
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8080/average_toxicity")
-      .then((res) => res.json())
-      .then((data) => {
-        const melbMap = { type: "FeatureCollection", features: [] };
-        const melbData = [];
-        console.log(data.data);
+    console.log("init effect call");
+    initMap();
+    if (!dataStore.isMapLoaded) {
+      // setLoading(true);
+      // console.log("set loading true");
+      dataStore.fetchMap().then(() => {
+        dataStore.setMapLoaded(true);
+        echarts.registerMap("melb", dataStore.melbMap);
 
-        Object.entries(data.data).forEach(([key, value]) => {
-          melbData.push({ name: key, value: value.average_toxicity });
-          melbMap.features.push({
-            geometry: value.geometry,
-            properties: { name: key },
-          });
+        fetchData().then(() => {
+          dataStore.setDataLoaded(props.mapType, true);
+          updateMap();
+          // setLoading(false);
+          // console.log("set loading false");
         });
-
-        console.log(melbMap);
-        console.log(melbData);
-
-        echarts.registerMap("melb", melbMap, {
-          Alaska: {
-            left: -131,
-            top: 25,
-            width: 15,
-          },
-          Hawaii: {
-            left: -110,
-            top: 28,
-            width: 5,
-          },
-          "Puerto Rico": {
-            left: -76,
-            top: 26,
-            width: 2,
-          },
-        });
-
-        setTimeout(() => {
-          let chartInstance = echarts.init(chartRef.current);
-
-          chartInstance.setOption({
-            title: {
-              text: "Title",
-              left: "right",
-            },
-            tooltip: {
-              trigger: "item",
-              showDelay: 0,
-              transitionDuration: 0.2,
-            },
-            visualMap: {
-              left: "right",
-              min: 0,
-              max: 0.01,
-              inRange: {
-                color: [
-                  "#313695",
-                  "#4575b4",
-                  "#74add1",
-                  "#abd9e9",
-                  "#e0f3f8",
-                  "#ffffbf",
-                  "#fee090",
-                  "#fdae61",
-                  "#f46d43",
-                  "#d73027",
-                  "#a50026",
-                ],
-              },
-              text: ["High", "Low"],
-              calculable: true,
-            },
-            toolbox: {
-              show: true,
-              //orient: 'vertical',
-              left: "left",
-              top: "top",
-              feature: {
-                dataView: { readOnly: false },
-                restore: {},
-              },
-            },
-            series: [
-              {
-                name: "Toxicity",
-                type: "map",
-                roam: true,
-                map: "melb",
-                emphasis: {
-                  label: {
-                    show: true,
-                  },
-                },
-                data: melbData,
-              },
-            ],
-          });
-
-          window.onresize = () => {
-            chartInstance.resize();
-          };
-        }, 10);
-      })
-      .catch((e) => {
-        console.log(e);
       });
+
+      if (props.mapType === "locToxMap") {
+        dataStore.fetchGloToxData();
+      } else if (props.mapType === "locSentMap") {
+        dataStore.fetchGloSentData();
+      }
+    } else {
+      if (!dataStore.isDataLoaded(props.mapType)) {
+        fetchData().then(() => {
+          updateMap();
+          dataStore.setDataLoaded(props.mapType, true);
+          // setLoading(false)
+          // console.log("set loading false");
+        });
+      } else {
+        dataStore.setDataLoaded(props.mapType, false);
+        setTimeout(() => {
+          updateMap();
+          dataStore.setDataLoaded(props.mapType, true);
+        }, 500);
+      }
+    }
+
+    // };
+
+    // load().catch(console.error);
+
+    const cleanUp = () => {
+      if (mapInstance) {
+        mapInstance.dispose();
+      }
+    };
+
+    return cleanUp;
   }, []);
 
   return (
-    <Card>
-      <Row>
+    <Card title={props.mapTitle} style={{ height: "730px" }}>
+      <Row gutter={[16, 16]}>
+        {props.mapType.substring(0, 3) === "loc" ? (
+          <Col span={24}>
+            <Global mapType={props.mapType} />
+          </Col>
+        ) : null}
         <Col span={24}>
-          <div ref={chartRef} style={{ height: "500px" }}></div>;
+          <MapForm formType={props.mapType} updateMap={updateMap} />
+        </Col>
+
+        <Col span={24}>
+          <Spin spinning={!dataStore.isDataLoaded(props.mapType)}>
+            <div ref={mapRef} style={{ height: "500px" }}></div>
+          </Spin>
         </Col>
       </Row>
     </Card>
   );
-};
+});
 
 export default Map;

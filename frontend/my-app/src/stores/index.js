@@ -1,10 +1,10 @@
 import { createContext, useContext } from "react";
-import MapStore from "./mapStore";
 import UIStore from "./uiStore";
+import DataStore from "./dataStore";
 
 class RootStore {
   constructor() {
-    this.mapStore = new MapStore();
+    this.dataStore = new DataStore();
     this.uiStore = new UIStore();
   }
 }
