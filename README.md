@@ -46,4 +46,3 @@ The project is deployed using Ansible, automating the process of applications de
 
 Visit [Project Visualization](http://172.26.133.136:8081) to see our project's visualization.
 
-![Project Visualization](https://github.com/CarrickC/COMP90024-23S1-A2/assets/131973111/03b421da-9355-4aee-a584-cd274da5def1.png)
