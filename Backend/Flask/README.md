@@ -27,7 +27,7 @@ You can install these libraries using pip:
 
 ```sh
 pip install flask flask_restful couchdb configparser geopandas json flask_cors nltk collections bs4 re datetime string emoji pysal
-```sh
+
 
 
 Running the Server
