@@ -1,0 +1,435 @@
+﻿Geography,Year,Category,Industry Space Use,Value
+City of Melbourne,2022,Jobs by industry,Agriculture and mining,2856
+City of Melbourne,2022,Jobs by industry,Business services,83146
+City of Melbourne,2022,Jobs by industry,Construction,6831
+City of Melbourne,2022,Jobs by industry,Other services,12344
+City of Melbourne,2022,Jobs by industry,Real estate services,9465
+City of Melbourne,2022,Jobs by industry,Retail trade,17549
+City of Melbourne,2022,Jobs by industry,Wholesale trade,5821
+City of Melbourne,2022,Jobs by space use,Industrial,8353
+City of Melbourne,2022,Jobs by space use,Retail,24890
+Carlton,2022,Jobs by industry,Admin and support services,115
+Carlton,2022,Jobs by industry,Agriculture and mining,0
+Carlton,2022,Jobs by industry,Construction,93
+Carlton,2022,Jobs by industry,Finance and insurance,328
+Carlton,2022,Jobs by industry,Manufacturing,162
+Carlton,2022,Jobs by industry,Public administration and safety,1002
+Docklands,2022,Jobs by industry,Education and training,1314
+Docklands,2022,Jobs by industry,Food and beverage services,3784
+Docklands,2022,Jobs by industry,Information media and telecommunications,6260
+Docklands,2022,Jobs by industry,Other services,609
+Docklands,2022,Jobs by industry,"Transport, postal and storage",2608
+East Melbourne,2022,Jobs by industry,Agriculture and mining,1
+East Melbourne,2022,Jobs by industry,Business services,998
+East Melbourne,2022,Jobs by industry,Food and beverage services,2850
+East Melbourne,2022,Jobs by industry,Rental and hiring services,0
+Kensington,2022,Jobs by industry,Accommodation,23
+Kensington,2022,Jobs by industry,Construction,309
+Kensington,2022,Jobs by industry,Education and training,185
+Kensington,2022,Jobs by industry,Information media and telecommunications,95
+Kensington,2022,Jobs by industry,Manufacturing,408
+Kensington,2022,Jobs by industry,Other services,300
+Kensington,2022,Jobs by industry,Rental and hiring services,26
+Kensington,2022,Jobs by industry,Retail trade,429
+Kensington,2022,Jobs by industry,Wholesale trade,363
+Melbourne (CBD),2022,Jobs by industry,Admin and support services,10649
+Melbourne (CBD),2022,Jobs by industry,Arts and recreation services,3191
+Melbourne (CBD),2022,Jobs by industry,Construction,2912
+Melbourne (CBD),2022,Jobs by industry,Food and beverage services,16538
+Melbourne (CBD),2022,Jobs by industry,Information media and telecommunications,15887
+Melbourne (CBD),2022,Jobs by industry,Other services,6464
+Melbourne (CBD),2022,Jobs by industry,Public administration and safety,27560
+Melbourne (Remainder),2022,Jobs by industry,Accommodation,68
+Melbourne (Remainder),2022,Jobs by industry,Admin and support services,1471
+Melbourne (Remainder),2022,Jobs by industry,Finance and insurance,1330
+Melbourne (Remainder),2022,Jobs by industry,Other services,136
+Melbourne (Remainder),2022,Jobs by industry,Public administration and safety,130
+Melbourne (Remainder),2022,Jobs by industry,Real estate services,128
+Melbourne (Remainder),2022,Jobs by industry,Rental and hiring services,0
+Melbourne (Remainder),2022,Jobs by industry,Retail trade,191
+Melbourne (Remainder),2022,Jobs by industry,"Transport, postal and storage",51
+North Melbourne,2022,Jobs by industry,Arts and recreation services,363
+North Melbourne,2022,Jobs by industry,"Electricity, gas, water and waste services",0
+North Melbourne,2022,Jobs by industry,Health care and social assistance,2070
+North Melbourne,2022,Jobs by industry,"Transport, postal and storage",255
+North Melbourne,2022,Jobs by industry,Wholesale trade,301
+Parkville,2022,Jobs by industry,Admin and support services,74
+Parkville,2022,Jobs by industry,Construction,0
+Parkville,2022,Jobs by industry,Real estate services,31
+Parkville,2022,Jobs by industry,Rental and hiring services,0
+Parkville,2022,Jobs by industry,"Transport, postal and storage",4
+Port Melbourne,2022,Jobs by industry,Admin and support services,552
+Port Melbourne,2022,Jobs by industry,Finance and insurance,42
+Port Melbourne,2022,Jobs by industry,Health care and social assistance,137
+Port Melbourne,2022,Jobs by industry,Manufacturing,3552
+Port Melbourne,2022,Jobs by industry,Other services,200
+Port Melbourne,2022,Jobs by industry,"Transport, postal and storage",2285
+South Yarra,2022,Jobs by industry,Agriculture and mining,0
+South Yarra,2022,Jobs by industry,Construction,0
+South Yarra,2022,Jobs by industry,Education and training,715
+South Yarra,2022,Jobs by industry,Health care and social assistance,61
+South Yarra,2022,Jobs by industry,Information media and telecommunications,5
+South Yarra,2022,Jobs by industry,Other services,25
+South Yarra,2022,Jobs by industry,Rental and hiring services,0
+South Yarra,2022,Jobs by industry,Retail trade,7
+Southbank,2022,Jobs by industry,Agriculture and mining,720
+Southbank,2022,Jobs by industry,Arts and recreation services,8721
+Southbank,2022,Jobs by industry,Public administration and safety,3082
+Southbank,2022,Jobs by industry,Real estate services,463
+Southbank,2022,Jobs by industry,Retail trade,2061
+West Melbourne (Industrial),2022,Jobs by industry,Accommodation,1
+West Melbourne (Industrial),2022,Jobs by industry,Admin and support services,9
+West Melbourne (Industrial),2022,Jobs by industry,Arts and recreation services,46
+West Melbourne (Industrial),2022,Jobs by industry,Finance and insurance,0
+West Melbourne (Industrial),2022,Jobs by industry,Manufacturing,159
+West Melbourne (Industrial),2022,Jobs by industry,Public administration and safety,18
+West Melbourne (Industrial),2022,Jobs by industry,Real estate services,3
+West Melbourne (Industrial),2022,Jobs by industry,Rental and hiring services,2
+West Melbourne (Industrial),2022,Jobs by industry,"Transport, postal and storage",2555
+West Melbourne (Residential),2022,Jobs by industry,Arts and recreation services,387
+West Melbourne (Residential),2022,Jobs by industry,Other services,348
+West Melbourne (Residential),2022,Jobs by industry,Public administration and safety,461
+West Melbourne (Residential),2022,Jobs by industry,"Transport, postal and storage",64
+West Melbourne (Residential),2022,Jobs by industry,Wholesale trade,149
+Carlton,2022,Jobs by space use,Accommodation - Commercial,806
+Carlton,2022,Jobs by space use,Other - Employment,477
+Docklands,2022,Jobs by space use,Accommodation - Commercial,400
+Docklands,2022,Jobs by space use,Entertainment - Other,969
+Docklands,2022,Jobs by space use,Industrial,21
+Docklands,2022,Jobs by space use,Office,64518
+Docklands,2022,Jobs by space use,Retail,2898
+East Melbourne,2022,Jobs by space use,Accommodation - Commercial,582
+East Melbourne,2022,Jobs by space use,Office,11162
+Kensington,2022,Jobs by space use,Education,331
+Kensington,2022,Jobs by space use,Entertainment - Hospitality,211
+Kensington,2022,Jobs by space use,Entertainment - Other,2814
+Kensington,2022,Jobs by space use,Industrial,730
+Melbourne (CBD),2022,Jobs by space use,Retail,15455
+Melbourne (Remainder),2022,Jobs by space use,Accommodation - Commercial,68
+Melbourne (Remainder),2022,Jobs by space use,Industrial,0
+Melbourne (Remainder),2022,Jobs by space use,Retail,563
+North Melbourne,2022,Jobs by space use,Industrial,831
+North Melbourne,2022,Jobs by space use,Retail,957
+Parkville,2022,Jobs by space use,Office,1421
+Parkville,2022,Jobs by space use,Other - Employment,82
+Parkville,2022,Jobs by space use,Retail,242
+Port Melbourne,2022,Jobs by space use,Industrial,3702
+Port Melbourne,2022,Jobs by space use,Office,8093
+Port Melbourne,2022,Jobs by space use,Other - Employment,62
+Port Melbourne,2022,Jobs by space use,Retail,173
+South Yarra,2022,Jobs by space use,Accommodation - Commercial,12
+South Yarra,2022,Jobs by space use,Entertainment - Hospitality,169
+South Yarra,2022,Jobs by space use,Office,15
+South Yarra,2022,Jobs by space use,Retail,19
+Southbank,2022,Jobs by space use,Accommodation - Commercial,1952
+Southbank,2022,Jobs by space use,Entertainment - Hospitality,3749
+Southbank,2022,Jobs by space use,Industrial,0
+Southbank,2022,Jobs by space use,Other - Employment,1202
+West Melbourne (Industrial),2022,Jobs by space use,Entertainment - Other,27
+West Melbourne (Industrial),2022,Jobs by space use,Industrial,2676
+West Melbourne (Residential),2022,Jobs by space use,Health,19
+West Melbourne (Residential),2022,Jobs by space use,Industrial,140
+Carlton,2022,Jobs by space use,Total jobs,15484
+Docklands,2022,Jobs by industry,Total jobs,73929
+Docklands,2022,Jobs by space use,Total jobs,73929
+East Melbourne,2022,Jobs by space use,Total jobs,20840
+Kensington,2022,Jobs by industry,Total jobs,7996
+Kensington,2022,Jobs by space use,Total jobs,7996
+North Melbourne,2022,Jobs by space use,Total jobs,10155
+Parkville,2022,Jobs by space use,Total jobs,30526
+Port Melbourne,2022,Jobs by space use,Total jobs,13183
+Southbank,2022,Jobs by industry,Total jobs,45230
+West Melbourne (Industrial),2022,Jobs by space use,Total jobs,3805
+City of Melbourne,2022,Jobs by industry,Accommodation,10107
+City of Melbourne,2022,Jobs by industry,Admin and support services,16323
+City of Melbourne,2022,Jobs by industry,Arts and recreation services,25936
+City of Melbourne,2022,Jobs by industry,Education and training,25673
+City of Melbourne,2022,Jobs by industry,"Electricity, gas, water and waste services",12031
+City of Melbourne,2022,Jobs by industry,Finance and insurance,64832
+City of Melbourne,2022,Jobs by industry,Food and beverage services,34278
+City of Melbourne,2022,Jobs by industry,Information media and telecommunications,26222
+City of Melbourne,2022,Jobs by industry,Rental and hiring services,377
+City of Melbourne,2022,Jobs by industry,"Transport, postal and storage",14489
+City of Melbourne,2022,Jobs by space use,Entertainment - Hospitality,28429
+City of Melbourne,2022,Jobs by space use,Entertainment - Other,19088
+City of Melbourne,2022,Jobs by space use,Health,35863
+Carlton,2022,Jobs by industry,Accommodation,867
+Carlton,2022,Jobs by industry,Arts and recreation services,760
+Carlton,2022,Jobs by industry,"Electricity, gas, water and waste services",0
+Carlton,2022,Jobs by industry,Food and beverage services,1646
+Carlton,2022,Jobs by industry,Other services,1297
+Carlton,2022,Jobs by industry,Real estate services,92
+Carlton,2022,Jobs by industry,Rental and hiring services,19
+Carlton,2022,Jobs by industry,Retail trade,712
+Carlton,2022,Jobs by industry,Wholesale trade,94
+Docklands,2022,Jobs by industry,Arts and recreation services,1894
+Docklands,2022,Jobs by industry,Business services,12197
+Docklands,2022,Jobs by industry,Construction,376
+Docklands,2022,Jobs by industry,"Electricity, gas, water and waste services",3623
+Docklands,2022,Jobs by industry,Finance and insurance,24858
+Docklands,2022,Jobs by industry,Public administration and safety,8473
+Docklands,2022,Jobs by industry,Rental and hiring services,24
+Docklands,2022,Jobs by industry,Retail trade,2522
+Docklands,2022,Jobs by industry,Wholesale trade,789
+East Melbourne,2022,Jobs by industry,Construction,52
+East Melbourne,2022,Jobs by industry,Education and training,1408
+East Melbourne,2022,Jobs by industry,Finance and insurance,528
+East Melbourne,2022,Jobs by industry,Health care and social assistance,5310
+East Melbourne,2022,Jobs by industry,Information media and telecommunications,72
+East Melbourne,2022,Jobs by industry,Manufacturing,642
+East Melbourne,2022,Jobs by industry,Public administration and safety,4588
+East Melbourne,2022,Jobs by industry,Real estate services,65
+Kensington,2022,Jobs by industry,Admin and support services,199
+Kensington,2022,Jobs by industry,Agriculture and mining,3
+Kensington,2022,Jobs by industry,Business services,995
+Kensington,2022,Jobs by industry,"Electricity, gas, water and waste services",0
+Kensington,2022,Jobs by industry,Finance and insurance,7
+Kensington,2022,Jobs by industry,Food and beverage services,344
+Melbourne (CBD),2022,Jobs by industry,Accommodation,4965
+Melbourne (CBD),2022,Jobs by industry,Agriculture and mining,1089
+Melbourne (CBD),2022,Jobs by industry,Finance and insurance,35981
+Melbourne (CBD),2022,Jobs by industry,Manufacturing,1603
+Melbourne (CBD),2022,Jobs by industry,Wholesale trade,512
+Melbourne (Remainder),2022,Jobs by industry,Arts and recreation services,4281
+Melbourne (Remainder),2022,Jobs by industry,Business services,3487
+Melbourne (Remainder),2022,Jobs by industry,"Electricity, gas, water and waste services",172
+Melbourne (Remainder),2022,Jobs by industry,Information media and telecommunications,35
+North Melbourne,2022,Jobs by industry,Finance and insurance,115
+North Melbourne,2022,Jobs by industry,Real estate services,111
+North Melbourne,2022,Jobs by industry,Rental and hiring services,29
+Parkville,2022,Jobs by industry,Accommodation,577
+Parkville,2022,Jobs by industry,Arts and recreation services,563
+Parkville,2022,Jobs by industry,Health care and social assistance,21195
+Parkville,2022,Jobs by industry,Other services,167
+Port Melbourne,2022,Jobs by industry,Accommodation,27
+Port Melbourne,2022,Jobs by industry,Agriculture and mining,6
+Port Melbourne,2022,Jobs by industry,Business services,1082
+Port Melbourne,2022,Jobs by industry,Construction,1054
+Port Melbourne,2022,Jobs by industry,"Electricity, gas, water and waste services",46
+Port Melbourne,2022,Jobs by industry,Food and beverage services,302
+Port Melbourne,2022,Jobs by industry,Information media and telecommunications,680
+Port Melbourne,2022,Jobs by industry,Retail trade,346
+South Yarra,2022,Jobs by industry,Accommodation,12
+South Yarra,2022,Jobs by industry,"Electricity, gas, water and waste services",0
+South Yarra,2022,Jobs by industry,Manufacturing,10
+South Yarra,2022,Jobs by industry,Public administration and safety,30
+South Yarra,2022,Jobs by industry,"Transport, postal and storage",0
+South Yarra,2022,Jobs by industry,Wholesale trade,0
+Southbank,2022,Jobs by industry,Accommodation,2275
+Southbank,2022,Jobs by industry,Admin and support services,1453
+Southbank,2022,Jobs by industry,Business services,7514
+Southbank,2022,Jobs by industry,"Electricity, gas, water and waste services",1056
+Southbank,2022,Jobs by industry,Finance and insurance,1531
+Southbank,2022,Jobs by industry,Food and beverage services,4147
+Southbank,2022,Jobs by industry,Information media and telecommunications,2542
+Southbank,2022,Jobs by industry,Manufacturing,4219
+Southbank,2022,Jobs by industry,Rental and hiring services,13
+Southbank,2022,Jobs by industry,Wholesale trade,1054
+West Melbourne (Industrial),2022,Jobs by industry,Construction,47
+West Melbourne (Industrial),2022,Jobs by industry,Education and training,0
+West Melbourne (Industrial),2022,Jobs by industry,Food and beverage services,10
+West Melbourne (Industrial),2022,Jobs by industry,Health care and social assistance,11
+West Melbourne (Industrial),2022,Jobs by industry,Other services,49
+West Melbourne (Industrial),2022,Jobs by industry,Retail trade,19
+West Melbourne (Residential),2022,Jobs by industry,Accommodation,22
+West Melbourne (Residential),2022,Jobs by industry,Admin and support services,186
+West Melbourne (Residential),2022,Jobs by industry,Business services,1142
+West Melbourne (Residential),2022,Jobs by industry,Construction,168
+West Melbourne (Residential),2022,Jobs by industry,Finance and insurance,78
+West Melbourne (Residential),2022,Jobs by industry,Health care and social assistance,842
+West Melbourne (Residential),2022,Jobs by industry,Manufacturing,105
+West Melbourne (Residential),2022,Jobs by industry,Real estate services,36
+West Melbourne (Residential),2022,Jobs by industry,Rental and hiring services,0
+Carlton,2022,Jobs by space use,Education,3364
+Carlton,2022,Jobs by space use,Entertainment - Hospitality,1418
+Carlton,2022,Jobs by space use,Health,1436
+Carlton,2022,Jobs by space use,Industrial,5
+Carlton,2022,Jobs by space use,Office,6243
+Docklands,2022,Jobs by space use,Education,1066
+Docklands,2022,Jobs by space use,Entertainment - Hospitality,3199
+Docklands,2022,Jobs by space use,Other - Employment,743
+East Melbourne,2022,Jobs by space use,Industrial,49
+East Melbourne,2022,Jobs by space use,Other - Employment,111
+East Melbourne,2022,Jobs by space use,Retail,192
+Kensington,2022,Jobs by space use,Accommodation - Commercial,23
+Kensington,2022,Jobs by space use,Health,340
+Kensington,2022,Jobs by space use,Office,2816
+Kensington,2022,Jobs by space use,Retail,424
+Melbourne (CBD),2022,Jobs by space use,Health,1995
+Melbourne (CBD),2022,Jobs by space use,Office,175772
+Melbourne (Remainder),2022,Jobs by space use,Education,3633
+Melbourne (Remainder),2022,Jobs by space use,Health,5425
+Melbourne (Remainder),2022,Jobs by space use,Office,10327
+North Melbourne,2022,Jobs by space use,Education,723
+North Melbourne,2022,Jobs by space use,Entertainment - Other,346
+North Melbourne,2022,Jobs by space use,Other - Employment,98
+Parkville,2022,Jobs by space use,Education,5919
+Parkville,2022,Jobs by space use,Entertainment - Other,504
+Parkville,2022,Jobs by space use,Health,21230
+Parkville,2022,Jobs by space use,Industrial,0
+Port Melbourne,2022,Jobs by space use,Entertainment - Hospitality,141
+Port Melbourne,2022,Jobs by space use,Entertainment - Other,16
+South Yarra,2022,Jobs by space use,Education,775
+South Yarra,2022,Jobs by space use,Health,35
+South Yarra,2022,Jobs by space use,Other - Employment,4
+Southbank,2022,Jobs by space use,Health,65
+West Melbourne (Industrial),2022,Jobs by space use,Accommodation - Commercial,1
+West Melbourne (Industrial),2022,Jobs by space use,Education,0
+West Melbourne (Industrial),2022,Jobs by space use,Entertainment - Hospitality,3
+West Melbourne (Industrial),2022,Jobs by space use,Health,11
+West Melbourne (Industrial),2022,Jobs by space use,Office,1034
+West Melbourne (Industrial),2022,Jobs by space use,Retail,18
+West Melbourne (Residential),2022,Jobs by space use,Accommodation - Commercial,28
+West Melbourne (Residential),2022,Jobs by space use,Entertainment - Other,266
+West Melbourne (Residential),2022,Jobs by space use,Office,3254
+City of Melbourne,2022,Jobs by space use,Total jobs,473514
+Melbourne (CBD),2022,Jobs by industry,Total jobs,222982
+Melbourne (Remainder),2022,Jobs by industry,Total jobs,23330
+North Melbourne,2022,Jobs by industry,Total jobs,10155
+Port Melbourne,2022,Jobs by industry,Total jobs,13183
+South Yarra,2022,Jobs by industry,Total jobs,1061
+Southbank,2022,Jobs by space use,Total jobs,45230
+West Melbourne (Industrial),2022,Jobs by industry,Total jobs,3805
+West Melbourne (Residential),2022,Jobs by space use,Total jobs,4994
+City of Melbourne,2022,Jobs by industry,Health care and social assistance,45387
+City of Melbourne,2022,Jobs by industry,Manufacturing,12636
+City of Melbourne,2022,Jobs by industry,Public administration and safety,47210
+City of Melbourne,2022,Jobs by space use,Accommodation - Commercial,8561
+City of Melbourne,2022,Jobs by space use,Education,25682
+City of Melbourne,2022,Jobs by space use,Office,317933
+City of Melbourne,2022,Jobs by space use,Other - Employment,4714
+Carlton,2022,Jobs by industry,Business services,2215
+Carlton,2022,Jobs by industry,Education and training,3109
+Carlton,2022,Jobs by industry,Health care and social assistance,2619
+Carlton,2022,Jobs by industry,Information media and telecommunications,334
+Carlton,2022,Jobs by industry,"Transport, postal and storage",19
+Docklands,2022,Jobs by industry,Accommodation,449
+Docklands,2022,Jobs by industry,Admin and support services,1069
+Docklands,2022,Jobs by industry,Agriculture and mining,1035
+Docklands,2022,Jobs by industry,Health care and social assistance,596
+Docklands,2022,Jobs by industry,Manufacturing,257
+Docklands,2022,Jobs by industry,Real estate services,1192
+East Melbourne,2022,Jobs by industry,Accommodation,685
+East Melbourne,2022,Jobs by industry,Admin and support services,94
+East Melbourne,2022,Jobs by industry,Arts and recreation services,2169
+East Melbourne,2022,Jobs by industry,"Electricity, gas, water and waste services",0
+East Melbourne,2022,Jobs by industry,Other services,1147
+East Melbourne,2022,Jobs by industry,Retail trade,81
+East Melbourne,2022,Jobs by industry,"Transport, postal and storage",11
+East Melbourne,2022,Jobs by industry,Wholesale trade,138
+Kensington,2022,Jobs by industry,Arts and recreation services,3435
+Kensington,2022,Jobs by industry,Health care and social assistance,480
+Kensington,2022,Jobs by industry,Public administration and safety,278
+Kensington,2022,Jobs by industry,Real estate services,61
+Kensington,2022,Jobs by industry,"Transport, postal and storage",56
+Melbourne (CBD),2022,Jobs by industry,Business services,50252
+Melbourne (CBD),2022,Jobs by industry,Education and training,10012
+Melbourne (CBD),2022,Jobs by industry,"Electricity, gas, water and waste services",7072
+Melbourne (CBD),2022,Jobs by industry,Health care and social assistance,4967
+Melbourne (CBD),2022,Jobs by industry,Real estate services,7233
+Melbourne (CBD),2022,Jobs by industry,Rental and hiring services,89
+Melbourne (CBD),2022,Jobs by industry,Retail trade,10289
+Melbourne (CBD),2022,Jobs by industry,"Transport, postal and storage",5718
+Melbourne (Remainder),2022,Jobs by industry,Agriculture and mining,0
+Melbourne (Remainder),2022,Jobs by industry,Construction,181
+Melbourne (Remainder),2022,Jobs by industry,Education and training,1860
+Melbourne (Remainder),2022,Jobs by industry,Food and beverage services,2761
+Melbourne (Remainder),2022,Jobs by industry,Health care and social assistance,6439
+Melbourne (Remainder),2022,Jobs by industry,Manufacturing,245
+Melbourne (Remainder),2022,Jobs by industry,Wholesale trade,363
+North Melbourne,2022,Jobs by industry,Accommodation,135
+North Melbourne,2022,Jobs by industry,Admin and support services,448
+North Melbourne,2022,Jobs by industry,Agriculture and mining,2
+North Melbourne,2022,Jobs by industry,Business services,1842
+North Melbourne,2022,Jobs by industry,Construction,603
+North Melbourne,2022,Jobs by industry,Education and training,647
+North Melbourne,2022,Jobs by industry,Food and beverage services,690
+North Melbourne,2022,Jobs by industry,Information media and telecommunications,167
+North Melbourne,2022,Jobs by industry,Manufacturing,278
+North Melbourne,2022,Jobs by industry,Other services,1007
+North Melbourne,2022,Jobs by industry,Public administration and safety,434
+North Melbourne,2022,Jobs by industry,Retail trade,660
+Parkville,2022,Jobs by industry,Agriculture and mining,0
+Parkville,2022,Jobs by industry,Business services,1266
+Parkville,2022,Jobs by industry,Education and training,4683
+Parkville,2022,Jobs by industry,"Electricity, gas, water and waste services",0
+Parkville,2022,Jobs by industry,Finance and insurance,34
+Parkville,2022,Jobs by industry,Food and beverage services,715
+Parkville,2022,Jobs by industry,Information media and telecommunications,10
+Parkville,2022,Jobs by industry,Manufacturing,996
+Parkville,2022,Jobs by industry,Public administration and safety,110
+Parkville,2022,Jobs by industry,Retail trade,57
+Parkville,2022,Jobs by industry,Wholesale trade,44
+Port Melbourne,2022,Jobs by industry,Arts and recreation services,100
+Port Melbourne,2022,Jobs by industry,Education and training,144
+Port Melbourne,2022,Jobs by industry,Public administration and safety,1042
+Port Melbourne,2022,Jobs by industry,Real estate services,52
+Port Melbourne,2022,Jobs by industry,Rental and hiring services,174
+Port Melbourne,2022,Jobs by industry,Wholesale trade,1358
+South Yarra,2022,Jobs by industry,Admin and support services,3
+South Yarra,2022,Jobs by industry,Arts and recreation services,24
+South Yarra,2022,Jobs by industry,Business services,0
+South Yarra,2022,Jobs by industry,Finance and insurance,0
+South Yarra,2022,Jobs by industry,Food and beverage services,169
+South Yarra,2022,Jobs by industry,Real estate services,0
+Southbank,2022,Jobs by industry,Construction,1037
+Southbank,2022,Jobs by industry,Education and training,1223
+Southbank,2022,Jobs by industry,Health care and social assistance,662
+Southbank,2022,Jobs by industry,Other services,594
+Southbank,2022,Jobs by industry,"Transport, postal and storage",862
+West Melbourne (Industrial),2022,Jobs by industry,Agriculture and mining,0
+West Melbourne (Industrial),2022,Jobs by industry,Business services,158
+West Melbourne (Industrial),2022,Jobs by industry,"Electricity, gas, water and waste services",61
+West Melbourne (Industrial),2022,Jobs by industry,Information media and telecommunications,0
+West Melbourne (Industrial),2022,Jobs by industry,Wholesale trade,656
+West Melbourne (Residential),2022,Jobs by industry,Agriculture and mining,0
+West Melbourne (Residential),2022,Jobs by industry,Education and training,372
+West Melbourne (Residential),2022,Jobs by industry,"Electricity, gas, water and waste services",0
+West Melbourne (Residential),2022,Jobs by industry,Food and beverage services,323
+West Melbourne (Residential),2022,Jobs by industry,Information media and telecommunications,137
+West Melbourne (Residential),2022,Jobs by industry,Retail trade,175
+Carlton,2022,Jobs by space use,Entertainment - Other,584
+Carlton,2022,Jobs by space use,Retail,1149
+Docklands,2022,Jobs by space use,Health,115
+East Melbourne,2022,Jobs by space use,Education,229
+East Melbourne,2022,Jobs by space use,Entertainment - Hospitality,2834
+East Melbourne,2022,Jobs by space use,Entertainment - Other,1184
+East Melbourne,2022,Jobs by space use,Health,4496
+Kensington,2022,Jobs by space use,Other - Employment,307
+Melbourne (CBD),2022,Jobs by space use,Accommodation - Commercial,3986
+Melbourne (CBD),2022,Jobs by space use,Education,7001
+Melbourne (CBD),2022,Jobs by space use,Entertainment - Hospitality,13573
+Melbourne (CBD),2022,Jobs by space use,Entertainment - Other,3916
+Melbourne (CBD),2022,Jobs by space use,Industrial,195
+Melbourne (CBD),2022,Jobs by space use,Other - Employment,1089
+Melbourne (Remainder),2022,Jobs by space use,Entertainment - Hospitality,1868
+Melbourne (Remainder),2022,Jobs by space use,Entertainment - Other,1400
+Melbourne (Remainder),2022,Jobs by space use,Other - Employment,46
+North Melbourne,2022,Jobs by space use,Accommodation - Commercial,120
+North Melbourne,2022,Jobs by space use,Entertainment - Hospitality,500
+North Melbourne,2022,Jobs by space use,Health,689
+North Melbourne,2022,Jobs by space use,Office,5892
+Parkville,2022,Jobs by space use,Accommodation - Commercial,582
+Parkville,2022,Jobs by space use,Entertainment - Hospitality,546
+Port Melbourne,2022,Jobs by space use,Accommodation - Commercial,1
+Port Melbourne,2022,Jobs by space use,Education,988
+Port Melbourne,2022,Jobs by space use,Health,6
+South Yarra,2022,Jobs by space use,Entertainment - Other,30
+South Yarra,2022,Jobs by space use,Industrial,3
+Southbank,2022,Jobs by space use,Education,1389
+Southbank,2022,Jobs by space use,Entertainment - Other,7031
+Southbank,2022,Jobs by space use,Office,27387
+Southbank,2022,Jobs by space use,Retail,2453
+West Melbourne (Industrial),2022,Jobs by space use,Other - Employment,35
+West Melbourne (Residential),2022,Jobs by space use,Education,264
+West Melbourne (Residential),2022,Jobs by space use,Entertainment - Hospitality,218
+West Melbourne (Residential),2022,Jobs by space use,Other - Employment,457
+West Melbourne (Residential),2022,Jobs by space use,Retail,348
+City of Melbourne,2022,Jobs by industry,Total jobs,473514
+Carlton,2022,Jobs by industry,Total jobs,15484
+East Melbourne,2022,Jobs by industry,Total jobs,20840
+Melbourne (CBD),2022,Jobs by space use,Total jobs,222982
+Melbourne (Remainder),2022,Jobs by space use,Total jobs,23330
+Parkville,2022,Jobs by industry,Total jobs,30526
+South Yarra,2022,Jobs by space use,Total jobs,1061
+West Melbourne (Residential),2022,Jobs by industry,Total jobs,4994

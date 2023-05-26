@@ -1,0 +1,813 @@
+﻿Geography,Year,Gender,Age,Value
+City of Melbourne,2023,Male,Age 0-4,2686
+City of Melbourne,2023,Female,Age 10-14,1005
+City of Melbourne,2023,Female,Age 15-19,3456
+City of Melbourne,2023,Male,Age 20-24,14419
+City of Melbourne,2023,Female,Age 35-39,7152
+City of Melbourne,2023,Male,Age 45-49,3166
+City of Melbourne,2023,Female,Age 60-64,2188
+City of Melbourne,2023,Female,Age 70-74,1707
+City of Melbourne,2023,Male,Age 75-79,808
+City of Melbourne,2023,Male,Age 80-84,346
+City of Melbourne,2023,Male,Age 85+,212
+Carlton,2023,Female,Age 5-9,178
+Carlton,2023,Male,Age 10-14,177
+Carlton,2023,Female,Age 15-19,673
+Carlton,2023,Female,Age 25-29,1806
+Carlton,2023,Male,Age 25-29,1653
+Carlton,2023,Female,Age 30-34,1030
+Carlton,2023,Female,Age 35-39,662
+Carlton,2023,Male,Age 40-44,374
+Carlton,2023,Male,Age 45-49,284
+Carlton,2023,Female,Age 50-54,267
+Carlton,2023,Female,Age 65-69,231
+Carlton,2023,Male,Age 65-69,111
+Carlton,2023,Female,Age 70-74,169
+Carlton,2023,Male,Age 75-79,95
+Carlton,2023,Female,Age 80-84,52
+Docklands,2023,Male,Age 15-19,166
+Docklands,2023,Female,Age 20-24,1019
+Docklands,2023,Male,Age 25-29,1572
+Docklands,2023,Female,Age 40-44,434
+Docklands,2023,Male,Age 50-54,449
+Docklands,2023,Male,Age 55-59,403
+East Melbourne,2023,Female,Age 0-4,72
+East Melbourne,2023,Male,Age 10-14,11
+East Melbourne,2023,Female,Age 35-39,281
+East Melbourne,2023,Male,Age 35-39,322
+East Melbourne,2023,Female,Age 40-44,167
+East Melbourne,2023,Male,Age 40-44,163
+East Melbourne,2023,Female,Age 50-54,133
+East Melbourne,2023,Female,Age 55-59,158
+East Melbourne,2023,Female,Age 65-69,179
+East Melbourne,2023,Female,Age 70-74,192
+East Melbourne,2023,Female,Age 80-84,23
+Kensington,2023,Male,Age 0-4,425
+Kensington,2023,Female,Age 30-34,993
+Kensington,2023,Male,Age 30-34,752
+Kensington,2023,Male,Age 40-44,495
+Kensington,2023,Female,Age 50-54,233
+Kensington,2023,Female,Age 60-64,194
+Kensington,2023,Male,Age 65-69,118
+Kensington,2023,Female,Age 70-74,166
+Kensington,2023,Male,Age 70-74,95
+Kensington,2023,Female,Age 75-79,65
+Kensington,2023,Female,Age 80-84,50
+Kensington,2023,Female,Age 85+,34
+Melbourne (CBD),2023,Male,Age 0-4,495
+Melbourne (CBD),2023,Male,Age 5-9,167
+Melbourne (CBD),2023,Female,Age 10-14,91
+Melbourne (CBD),2023,Female,Age 20-24,6604
+Melbourne (CBD),2023,Female,Age 30-34,3372
+Melbourne (CBD),2023,Female,Age 35-39,1595
+Melbourne (CBD),2023,Male,Age 35-39,1987
+Melbourne (CBD),2023,Female,Age 40-44,868
+Melbourne (CBD),2023,Female,Age 50-54,490
+Melbourne (CBD),2023,Female,Age 55-59,430
+Melbourne (CBD),2023,Female,Age 65-69,233
+Melbourne (CBD),2023,Female,Age 75-79,105
+Melbourne (CBD),2023,Male,Age 75-79,141
+Melbourne (Remainder),2023,Male,Age 10-14,21
+Melbourne (Remainder),2023,Male,Age 15-19,28
+Melbourne (Remainder),2023,Female,Age 25-29,176
+Melbourne (Remainder),2023,Male,Age 40-44,118
+Melbourne (Remainder),2023,Female,Age 50-54,64
+Melbourne (Remainder),2023,Female,Age 60-64,128
+Melbourne (Remainder),2023,Female,Age 75-79,99
+Melbourne (Remainder),2023,Female,Age 80-84,30
+Melbourne (Remainder),2023,Male,Age 80-84,29
+Melbourne (Remainder),2023,Female,Age 85+,24
+Melbourne (Remainder),2023,Male,Age 85+,23
+North Melbourne,2023,Male,Age 5-9,246
+North Melbourne,2023,Male,Age 10-14,223
+North Melbourne,2023,Female,Age 15-19,284
+North Melbourne,2023,Female,Age 30-34,1070
+North Melbourne,2023,Female,Age 35-39,743
+North Melbourne,2023,Female,Age 45-49,388
+North Melbourne,2023,Female,Age 50-54,324
+North Melbourne,2023,Female,Age 55-59,225
+North Melbourne,2023,Male,Age 60-64,239
+North Melbourne,2023,Female,Age 65-69,208
+North Melbourne,2023,Female,Age 70-74,175
+North Melbourne,2023,Male,Age 70-74,233
+North Melbourne,2023,Male,Age 75-79,60
+Parkville,2023,Female,Age 15-19,473
+Parkville,2023,Male,Age 20-24,848
+Parkville,2023,Female,Age 25-29,656
+Parkville,2023,Male,Age 25-29,605
+Parkville,2023,Male,Age 50-54,118
+Parkville,2023,Male,Age 55-59,100
+Parkville,2023,Male,Age 60-64,114
+Parkville,2023,Male,Age 85+,26
+Port Melbourne,2023,Female,Age 15-19,0
+Port Melbourne,2023,Female,Age 20-24,1
+Port Melbourne,2023,Male,Age 25-29,1
+Port Melbourne,2023,Female,Age 30-34,1
+Port Melbourne,2023,Female,Age 35-39,0
+Port Melbourne,2023,Male,Age 35-39,0
+Port Melbourne,2023,Female,Age 45-49,0
+Port Melbourne,2023,Female,Age 50-54,0
+Port Melbourne,2023,Male,Age 55-59,0
+Port Melbourne,2023,Female,Age 60-64,0
+Port Melbourne,2023,Female,Age 65-69,0
+Port Melbourne,2023,Female,Age 70-74,0
+Port Melbourne,2023,Male,Age 70-74,0
+Port Melbourne,2023,Female,Age 75-79,0
+Port Melbourne,2023,Male,Age 80-84,0
+Port Melbourne,2023,Male,Age 85+,0
+South Yarra,2023,Female,Age 0-4,56
+South Yarra,2023,Female,Age 5-9,40
+South Yarra,2023,Male,Age 10-14,14
+South Yarra,2023,Male,Age 20-24,89
+South Yarra,2023,Female,Age 30-34,296
+South Yarra,2023,Male,Age 35-39,174
+South Yarra,2023,Male,Age 40-44,147
+South Yarra,2023,Male,Age 50-54,64
+South Yarra,2023,Male,Age 55-59,91
+South Yarra,2023,Female,Age 65-69,116
+South Yarra,2023,Female,Age 75-79,49
+South Yarra,2023,Female,Age 80-84,14
+South Yarra,2023,Female,Age 85+,19
+Southbank,2023,Male,Age 0-4,310
+Southbank,2023,Male,Age 10-14,36
+Southbank,2023,Female,Age 25-29,2599
+Southbank,2023,Female,Age 45-49,413
+Southbank,2023,Male,Age 50-54,411
+Southbank,2023,Female,Age 60-64,333
+Southbank,2023,Male,Age 75-79,102
+Southbank,2023,Male,Age 80-84,54
+West Melbourne (Industrial),2023,Female,Age 5-9,0
+West Melbourne (Industrial),2023,Male,Age 5-9,0
+West Melbourne (Industrial),2023,Female,Age 10-14,0
+West Melbourne (Industrial),2023,Female,Age 15-19,0
+West Melbourne (Industrial),2023,Female,Age 25-29,0
+West Melbourne (Industrial),2023,Female,Age 35-39,0
+West Melbourne (Industrial),2023,Male,Age 45-49,0
+West Melbourne (Industrial),2023,Male,Age 50-54,0
+West Melbourne (Industrial),2023,Male,Age 55-59,0
+West Melbourne (Industrial),2023,Male,Age 65-69,0
+West Melbourne (Industrial),2023,Female,Age 70-74,0
+West Melbourne (Industrial),2023,Female,Age 75-79,0
+West Melbourne (Industrial),2023,Female,Age 80-84,0
+West Melbourne (Industrial),2023,Male,Age 85+,0
+West Melbourne (Residential),2023,Female,Age 0-4,116
+West Melbourne (Residential),2023,Male,Age 0-4,156
+West Melbourne (Residential),2023,Female,Age 5-9,99
+West Melbourne (Residential),2023,Male,Age 10-14,67
+West Melbourne (Residential),2023,Female,Age 15-19,84
+West Melbourne (Residential),2023,Male,Age 25-29,1043
+West Melbourne (Residential),2023,Female,Age 45-49,166
+West Melbourne (Residential),2023,Female,Age 50-54,93
+West Melbourne (Residential),2023,Female,Age 60-64,81
+West Melbourne (Residential),2023,Male,Age 65-69,27
+West Melbourne (Residential),2023,Female,Age 80-84,3
+West Melbourne (Residential),2023,Female,Age 85+,4
+West Melbourne (Residential),2023,Male,Age 85+,2
+City of Melbourne,2023,Total,Age 0-4,5163
+City of Melbourne,2023,Total,Age 15-19,6543
+City of Melbourne,2023,Total,Age 25-29,32244
+City of Melbourne,2023,Total,Age 35-39,15107
+City of Melbourne,2023,Total,Age 55-59,4919
+City of Melbourne,2023,Total,Age 60-64,4339
+City of Melbourne,2023,Total,Age 75-79,1573
+City of Melbourne,2023,Total,Age 80-84,706
+Carlton,2023,Total,Age 0-4,454
+Carlton,2023,Total,Age 5-9,352
+Carlton,2023,Total,Age 15-19,1248
+Carlton,2023,Total,Age 45-49,546
+Carlton,2023,Total,Age 60-64,369
+Carlton,2023,Total,Age 75-79,175
+Carlton,2023,Total,Age 80-84,78
+Docklands,2023,Total,Age 5-9,324
+Docklands,2023,Total,Age 10-14,117
+Docklands,2023,Total,Age 20-24,1983
+Docklands,2023,Total,Age 25-29,3159
+Docklands,2023,Total,Age 60-64,617
+Docklands,2023,Total,Age 65-69,588
+East Melbourne,2023,Total,Age 15-19,38
+East Melbourne,2023,Total,Age 45-49,285
+East Melbourne,2023,Total,Age 50-54,270
+East Melbourne,2023,Total,Age 65-69,328
+East Melbourne,2023,Total,Age 75-79,116
+Kensington,2023,Total,Age 5-9,527
+Kensington,2023,Total,Age 25-29,1581
+Kensington,2023,Total,Age 35-39,1417
+Kensington,2023,Total,Age 60-64,413
+Melbourne (CBD),2023,Total,Age 45-49,1347
+Melbourne (CBD),2023,Total,Age 60-64,733
+Melbourne (CBD),2023,Total,Age 85+,102
+Melbourne (Remainder),2023,Total,Age 15-19,50
+Melbourne (Remainder),2023,Total,Age 30-34,461
+Melbourne (Remainder),2023,Total,Age 45-49,111
+Melbourne (Remainder),2023,Total,Age 55-59,145
+North Melbourne,2023,Total,Age 0-4,584
+North Melbourne,2023,Total,Age 10-14,488
+North Melbourne,2023,Total,Age 55-59,478
+North Melbourne,2023,Total,Age 60-64,463
+North Melbourne,2023,Total,Age 70-74,407
+North Melbourne,2023,Total,Age 80-84,113
+Parkville,2023,Total,Age 0-4,328
+Parkville,2023,Total,Age 45-49,211
+Parkville,2023,Total,Age 75-79,162
+Port Melbourne,2023,Total,Age 20-24,2
+Port Melbourne,2023,Total,Age 25-29,1
+Port Melbourne,2023,Total,Age 30-34,1
+Port Melbourne,2023,Total,Age 35-39,1
+Port Melbourne,2023,Total,Age 40-44,1
+South Yarra,2023,Total,Age 0-4,109
+South Yarra,2023,Total,Age 15-19,86
+South Yarra,2023,Total,Age 60-64,242
+South Yarra,2023,Total,Age 75-79,122
+South Yarra,2023,Total,Age 85+,30
+Southbank,2023,Total,Age 0-4,634
+Southbank,2023,Total,Age 10-14,127
+Southbank,2023,Total,Age 15-19,607
+Southbank,2023,Total,Age 20-24,3545
+Southbank,2023,Total,Age 25-29,5143
+Southbank,2023,Total,Age 65-69,559
+Southbank,2023,Total,Age 85+,78
+West Melbourne (Industrial),2023,Total,Age 0-4,0
+West Melbourne (Industrial),2023,Total,Age 15-19,0
+West Melbourne (Industrial),2023,Total,Age 35-39,0
+West Melbourne (Industrial),2023,Total,Age 40-44,0
+West Melbourne (Industrial),2023,Total,Age 70-74,0
+West Melbourne (Industrial),2023,Total,Age 75-79,0
+West Melbourne (Industrial),2023,Total,Age 80-84,0
+West Melbourne (Residential),2023,Total,Age 10-14,132
+West Melbourne (Residential),2023,Total,Age 25-29,2047
+West Melbourne (Residential),2023,Total,Age 60-64,141
+West Melbourne (Residential),2023,Total,Age 65-69,96
+West Melbourne (Residential),2023,Total,Age 70-74,98
+West Melbourne (Residential),2023,Total,Age 75-79,26
+City of Melbourne,2023,Total,Average age,33
+Carlton,2023,Female,Average age,30
+East Melbourne,2023,Female,Average age,42
+East Melbourne,2023,Male,Average age,42
+East Melbourne,2023,Total,Average age,42
+Kensington,2023,Female,Average age,36
+Melbourne (CBD),2023,Female,Average age,29
+Melbourne (CBD),2023,Male,Average age,30
+Melbourne (CBD),2023,Total,Average age,30
+Melbourne (Remainder),2023,Female,Average age,45
+Parkville,2023,Female,Average age,32
+Port Melbourne,2023,Total,Average age,38
+South Yarra,2023,Female,Average age,41
+South Yarra,2023,Male,Average age,41
+Southbank,2023,Female,Average age,33
+West Melbourne (Industrial),2023,Female,Average age,
+West Melbourne (Industrial),2023,Male,Average age,
+West Melbourne (Industrial),2023,Total,Average age,
+West Melbourne (Residential),2023,Female,Average age,31
+East Melbourne,2023,Not applicable,Total population,5145
+Melbourne (CBD),2023,Not applicable,Total population,45124
+Melbourne (Remainder),2023,Not applicable,Total population,3201
+Port Melbourne,2023,Not applicable,Total population,10
+South Yarra,2023,Not applicable,Total population,3832
+City of Melbourne,2023,Female,Age 0-4,2477
+City of Melbourne,2023,Female,Age 5-9,1384
+City of Melbourne,2023,Male,Age 5-9,1362
+City of Melbourne,2023,Female,Age 25-29,16555
+City of Melbourne,2023,Male,Age 25-29,15688
+City of Melbourne,2023,Female,Age 40-44,4095
+City of Melbourne,2023,Male,Age 40-44,4627
+City of Melbourne,2023,Female,Age 45-49,3135
+City of Melbourne,2023,Female,Age 50-54,2611
+City of Melbourne,2023,Male,Age 50-54,2570
+City of Melbourne,2023,Female,Age 55-59,2495
+City of Melbourne,2023,Female,Age 75-79,765
+Carlton,2023,Female,Age 0-4,222
+Carlton,2023,Male,Age 0-4,232
+Carlton,2023,Female,Age 10-14,141
+Carlton,2023,Female,Age 20-24,2755
+Carlton,2023,Male,Age 20-24,2381
+Carlton,2023,Female,Age 45-49,262
+Carlton,2023,Female,Age 55-59,239
+Carlton,2023,Female,Age 60-64,219
+Carlton,2023,Male,Age 70-74,181
+Carlton,2023,Female,Age 75-79,79
+Docklands,2023,Female,Age 5-9,194
+Docklands,2023,Male,Age 5-9,130
+Docklands,2023,Female,Age 10-14,51
+Docklands,2023,Male,Age 10-14,66
+Docklands,2023,Male,Age 20-24,964
+Docklands,2023,Female,Age 25-29,1587
+Docklands,2023,Female,Age 45-49,433
+Docklands,2023,Female,Age 50-54,409
+Docklands,2023,Female,Age 55-59,443
+Docklands,2023,Male,Age 65-69,290
+Docklands,2023,Male,Age 70-74,196
+Docklands,2023,Female,Age 75-79,62
+East Melbourne,2023,Male,Age 0-4,53
+East Melbourne,2023,Female,Age 10-14,19
+East Melbourne,2023,Female,Age 20-24,192
+East Melbourne,2023,Male,Age 25-29,366
+East Melbourne,2023,Female,Age 45-49,141
+East Melbourne,2023,Male,Age 45-49,144
+East Melbourne,2023,Male,Age 50-54,137
+East Melbourne,2023,Male,Age 55-59,123
+East Melbourne,2023,Female,Age 60-64,195
+East Melbourne,2023,Male,Age 65-69,149
+East Melbourne,2023,Male,Age 70-74,143
+East Melbourne,2023,Male,Age 75-79,75
+East Melbourne,2023,Male,Age 80-84,10
+East Melbourne,2023,Male,Age 85+,18
+Kensington,2023,Female,Age 5-9,229
+Kensington,2023,Male,Age 5-9,298
+Kensington,2023,Female,Age 15-19,79
+Kensington,2023,Female,Age 20-24,312
+Kensington,2023,Female,Age 25-29,841
+Kensington,2023,Male,Age 45-49,373
+Kensington,2023,Female,Age 55-59,231
+Kensington,2023,Male,Age 55-59,246
+Kensington,2023,Male,Age 80-84,42
+Kensington,2023,Male,Age 85+,18
+Melbourne (CBD),2023,Male,Age 15-19,1157
+Melbourne (CBD),2023,Female,Age 25-29,5625
+Melbourne (CBD),2023,Male,Age 25-29,5288
+Melbourne (CBD),2023,Male,Age 40-44,955
+Melbourne (CBD),2023,Male,Age 45-49,640
+Melbourne (CBD),2023,Male,Age 50-54,461
+Melbourne (CBD),2023,Female,Age 60-64,354
+Melbourne (CBD),2023,Male,Age 65-69,299
+Melbourne (CBD),2023,Female,Age 80-84,62
+Melbourne (CBD),2023,Male,Age 80-84,70
+Melbourne (CBD),2023,Female,Age 85+,60
+Melbourne (CBD),2023,Male,Age 85+,42
+Melbourne (Remainder),2023,Male,Age 0-4,25
+Melbourne (Remainder),2023,Male,Age 5-9,17
+Melbourne (Remainder),2023,Female,Age 10-14,14
+Melbourne (Remainder),2023,Female,Age 15-19,22
+Melbourne (Remainder),2023,Female,Age 55-59,69
+Melbourne (Remainder),2023,Male,Age 60-64,85
+North Melbourne,2023,Female,Age 0-4,282
+North Melbourne,2023,Male,Age 0-4,302
+North Melbourne,2023,Male,Age 15-19,247
+North Melbourne,2023,Female,Age 20-24,1457
+North Melbourne,2023,Male,Age 20-24,1240
+North Melbourne,2023,Male,Age 25-29,1432
+North Melbourne,2023,Male,Age 30-34,1067
+North Melbourne,2023,Male,Age 35-39,803
+North Melbourne,2023,Male,Age 40-44,556
+North Melbourne,2023,Male,Age 45-49,384
+North Melbourne,2023,Female,Age 60-64,225
+North Melbourne,2023,Male,Age 65-69,217
+North Melbourne,2023,Female,Age 80-84,51
+North Melbourne,2023,Male,Age 80-84,62
+North Melbourne,2023,Female,Age 85+,22
+Parkville,2023,Female,Age 10-14,84
+Parkville,2023,Male,Age 15-19,383
+Parkville,2023,Female,Age 20-24,928
+Parkville,2023,Female,Age 30-34,454
+Parkville,2023,Female,Age 35-39,324
+Parkville,2023,Male,Age 35-39,300
+Parkville,2023,Female,Age 40-44,137
+Parkville,2023,Male,Age 45-49,112
+Parkville,2023,Female,Age 55-59,104
+Parkville,2023,Female,Age 60-64,102
+Parkville,2023,Male,Age 65-69,114
+Parkville,2023,Male,Age 70-74,95
+Parkville,2023,Male,Age 75-79,82
+Port Melbourne,2023,Female,Age 0-4,0
+Port Melbourne,2023,Male,Age 0-4,0
+Port Melbourne,2023,Male,Age 5-9,0
+Port Melbourne,2023,Male,Age 10-14,0
+Port Melbourne,2023,Male,Age 15-19,0
+Port Melbourne,2023,Male,Age 20-24,1
+Port Melbourne,2023,Female,Age 25-29,1
+Port Melbourne,2023,Female,Age 40-44,0
+Port Melbourne,2023,Male,Age 45-49,0
+Port Melbourne,2023,Male,Age 60-64,0
+Port Melbourne,2023,Male,Age 65-69,0
+South Yarra,2023,Male,Age 0-4,53
+South Yarra,2023,Male,Age 5-9,59
+South Yarra,2023,Female,Age 10-14,38
+South Yarra,2023,Female,Age 15-19,35
+South Yarra,2023,Male,Age 15-19,51
+South Yarra,2023,Female,Age 20-24,122
+South Yarra,2023,Male,Age 25-29,271
+South Yarra,2023,Male,Age 30-34,308
+South Yarra,2023,Female,Age 35-39,215
+South Yarra,2023,Female,Age 45-49,129
+South Yarra,2023,Male,Age 45-49,99
+South Yarra,2023,Female,Age 50-54,77
+South Yarra,2023,Male,Age 65-69,112
+South Yarra,2023,Male,Age 70-74,126
+South Yarra,2023,Male,Age 85+,11
+Southbank,2023,Female,Age 20-24,1751
+Southbank,2023,Female,Age 30-34,2199
+Southbank,2023,Male,Age 30-34,2306
+Southbank,2023,Male,Age 35-39,1442
+Southbank,2023,Male,Age 45-49,512
+Southbank,2023,Female,Age 55-59,388
+Southbank,2023,Male,Age 60-64,275
+Southbank,2023,Male,Age 65-69,295
+Southbank,2023,Female,Age 70-74,230
+Southbank,2023,Female,Age 75-79,95
+Southbank,2023,Female,Age 80-84,19
+Southbank,2023,Female,Age 85+,51
+West Melbourne (Industrial),2023,Female,Age 0-4,0
+West Melbourne (Industrial),2023,Male,Age 0-4,0
+West Melbourne (Industrial),2023,Male,Age 25-29,0
+West Melbourne (Industrial),2023,Female,Age 30-34,0
+West Melbourne (Industrial),2023,Male,Age 35-39,0
+West Melbourne (Industrial),2023,Female,Age 50-54,0
+West Melbourne (Industrial),2023,Female,Age 55-59,0
+West Melbourne (Industrial),2023,Female,Age 60-64,0
+West Melbourne (Industrial),2023,Male,Age 60-64,0
+West Melbourne (Industrial),2023,Female,Age 65-69,0
+West Melbourne (Industrial),2023,Male,Age 70-74,0
+West Melbourne (Industrial),2023,Male,Age 75-79,0
+West Melbourne (Industrial),2023,Male,Age 80-84,0
+West Melbourne (Residential),2023,Male,Age 20-24,605
+West Melbourne (Residential),2023,Female,Age 25-29,1004
+West Melbourne (Residential),2023,Male,Age 30-34,852
+West Melbourne (Residential),2023,Female,Age 35-39,482
+West Melbourne (Residential),2023,Male,Age 35-39,386
+West Melbourne (Residential),2023,Female,Age 40-44,210
+West Melbourne (Residential),2023,Male,Age 40-44,312
+West Melbourne (Residential),2023,Male,Age 45-49,172
+West Melbourne (Residential),2023,Male,Age 50-54,150
+West Melbourne (Residential),2023,Male,Age 55-59,78
+West Melbourne (Residential),2023,Male,Age 60-64,60
+West Melbourne (Residential),2023,Female,Age 65-69,69
+West Melbourne (Residential),2023,Female,Age 70-74,32
+West Melbourne (Residential),2023,Male,Age 70-74,66
+West Melbourne (Residential),2023,Female,Age 75-79,5
+West Melbourne (Residential),2023,Male,Age 75-79,21
+West Melbourne (Residential),2023,Male,Age 80-84,0
+City of Melbourne,2023,Total,Age 5-9,2746
+City of Melbourne,2023,Total,Age 10-14,2059
+City of Melbourne,2023,Total,Age 20-24,30252
+City of Melbourne,2023,Total,Age 40-44,8722
+City of Melbourne,2023,Total,Age 45-49,6301
+City of Melbourne,2023,Total,Age 85+,553
+Carlton,2023,Total,Age 10-14,319
+Carlton,2023,Total,Age 25-29,3459
+Carlton,2023,Total,Age 30-34,2073
+Carlton,2023,Total,Age 35-39,1303
+Carlton,2023,Total,Age 40-44,674
+Carlton,2023,Total,Age 55-59,422
+Carlton,2023,Total,Age 65-69,342
+Carlton,2023,Total,Age 70-74,350
+Carlton,2023,Total,Age 85+,40
+Docklands,2023,Total,Age 0-4,852
+Docklands,2023,Total,Age 30-34,2645
+Docklands,2023,Total,Age 45-49,820
+Docklands,2023,Total,Age 55-59,846
+Docklands,2023,Total,Age 70-74,301
+Docklands,2023,Total,Age 85+,30
+East Melbourne,2023,Total,Age 5-9,42
+East Melbourne,2023,Total,Age 20-24,360
+East Melbourne,2023,Total,Age 30-34,766
+East Melbourne,2023,Total,Age 35-39,603
+East Melbourne,2023,Total,Age 40-44,330
+East Melbourne,2023,Total,Age 80-84,34
+East Melbourne,2023,Total,Age 85+,48
+Kensington,2023,Total,Age 0-4,773
+Kensington,2023,Total,Age 20-24,646
+Kensington,2023,Total,Age 40-44,1035
+Kensington,2023,Total,Age 50-54,414
+Kensington,2023,Total,Age 55-59,477
+Kensington,2023,Total,Age 70-74,260
+Kensington,2023,Total,Age 85+,52
+Melbourne (CBD),2023,Total,Age 0-4,961
+Melbourne (CBD),2023,Total,Age 15-19,2432
+Melbourne (CBD),2023,Total,Age 25-29,10914
+Melbourne (CBD),2023,Total,Age 35-39,3581
+Melbourne (CBD),2023,Total,Age 55-59,875
+Melbourne (CBD),2023,Total,Age 65-69,533
+Melbourne (CBD),2023,Total,Age 75-79,246
+Melbourne (CBD),2023,Total,Age 80-84,133
+Melbourne (Remainder),2023,Total,Age 0-4,71
+Melbourne (Remainder),2023,Total,Age 10-14,35
+Melbourne (Remainder),2023,Total,Age 25-29,351
+Melbourne (Remainder),2023,Total,Age 35-39,364
+Melbourne (Remainder),2023,Total,Age 40-44,268
+Melbourne (Remainder),2023,Total,Age 65-69,264
+Melbourne (Remainder),2023,Total,Age 75-79,154
+North Melbourne,2023,Total,Age 15-19,531
+North Melbourne,2023,Total,Age 20-24,2697
+North Melbourne,2023,Total,Age 25-29,2940
+North Melbourne,2023,Total,Age 35-39,1546
+North Melbourne,2023,Total,Age 40-44,1183
+North Melbourne,2023,Total,Age 45-49,773
+North Melbourne,2023,Total,Age 50-54,616
+North Melbourne,2023,Total,Age 65-69,425
+North Melbourne,2023,Total,Age 75-79,144
+North Melbourne,2023,Total,Age 85+,37
+Parkville,2023,Total,Age 15-19,856
+Parkville,2023,Total,Age 20-24,1777
+Parkville,2023,Total,Age 25-29,1261
+Parkville,2023,Total,Age 30-34,902
+Parkville,2023,Total,Age 40-44,265
+Parkville,2023,Total,Age 60-64,216
+Parkville,2023,Total,Age 80-84,81
+Parkville,2023,Total,Age 85+,82
+Port Melbourne,2023,Total,Age 0-4,0
+Port Melbourne,2023,Total,Age 15-19,1
+Port Melbourne,2023,Total,Age 60-64,0
+Port Melbourne,2023,Total,Age 65-69,0
+South Yarra,2023,Total,Age 5-9,99
+South Yarra,2023,Total,Age 10-14,52
+South Yarra,2023,Total,Age 20-24,211
+South Yarra,2023,Total,Age 25-29,560
+South Yarra,2023,Total,Age 40-44,224
+South Yarra,2023,Total,Age 65-69,228
+Southbank,2023,Total,Age 5-9,241
+Southbank,2023,Total,Age 30-34,4506
+Southbank,2023,Total,Age 50-54,795
+Southbank,2023,Total,Age 80-84,73
+West Melbourne (Industrial),2023,Total,Age 10-14,0
+West Melbourne (Industrial),2023,Total,Age 30-34,0
+West Melbourne (Industrial),2023,Total,Age 45-49,0
+West Melbourne (Industrial),2023,Total,Age 55-59,0
+West Melbourne (Residential),2023,Total,Age 5-9,154
+West Melbourne (Residential),2023,Total,Age 30-34,1617
+West Melbourne (Residential),2023,Total,Age 35-39,868
+West Melbourne (Residential),2023,Total,Age 40-44,522
+City of Melbourne,2023,Female,Average age,33
+Docklands,2023,Male,Average age,35
+North Melbourne,2023,Male,Average age,33
+Parkville,2023,Total,Average age,32
+Port Melbourne,2023,Female,Average age,38
+South Yarra,2023,Total,Average age,41
+Southbank,2023,Total,Average age,34
+West Melbourne (Residential),2023,Male,Average age,31
+West Melbourne (Residential),2023,Total,Average age,31
+Carlton,2023,Not applicable,Total population,17840
+City of Melbourne,2023,Male,Age 10-14,1055
+City of Melbourne,2023,Male,Age 15-19,3087
+City of Melbourne,2023,Female,Age 20-24,15833
+City of Melbourne,2023,Female,Age 30-34,12112
+City of Melbourne,2023,Male,Age 30-34,12307
+City of Melbourne,2023,Male,Age 35-39,7954
+City of Melbourne,2023,Male,Age 55-59,2424
+City of Melbourne,2023,Male,Age 60-64,2151
+City of Melbourne,2023,Female,Age 65-69,1969
+City of Melbourne,2023,Male,Age 65-69,1880
+City of Melbourne,2023,Male,Age 70-74,1741
+City of Melbourne,2023,Female,Age 80-84,359
+City of Melbourne,2023,Female,Age 85+,340
+Carlton,2023,Male,Age 5-9,174
+Carlton,2023,Male,Age 15-19,575
+Carlton,2023,Male,Age 30-34,1043
+Carlton,2023,Male,Age 35-39,641
+Carlton,2023,Female,Age 40-44,301
+Carlton,2023,Male,Age 50-54,234
+Carlton,2023,Male,Age 55-59,183
+Carlton,2023,Male,Age 60-64,150
+Carlton,2023,Male,Age 80-84,25
+Carlton,2023,Female,Age 85+,24
+Carlton,2023,Male,Age 85+,16
+Docklands,2023,Female,Age 0-4,394
+Docklands,2023,Male,Age 0-4,458
+Docklands,2023,Female,Age 15-19,189
+Docklands,2023,Female,Age 30-34,1263
+Docklands,2023,Male,Age 30-34,1382
+Docklands,2023,Female,Age 35-39,820
+Docklands,2023,Male,Age 35-39,980
+Docklands,2023,Male,Age 40-44,602
+Docklands,2023,Male,Age 45-49,386
+Docklands,2023,Female,Age 60-64,247
+Docklands,2023,Male,Age 60-64,370
+Docklands,2023,Female,Age 65-69,298
+Docklands,2023,Female,Age 70-74,104
+Docklands,2023,Male,Age 75-79,29
+Docklands,2023,Female,Age 80-84,6
+Docklands,2023,Male,Age 80-84,8
+Docklands,2023,Female,Age 85+,17
+Docklands,2023,Male,Age 85+,13
+East Melbourne,2023,Female,Age 5-9,23
+East Melbourne,2023,Male,Age 5-9,19
+East Melbourne,2023,Female,Age 15-19,23
+East Melbourne,2023,Male,Age 15-19,16
+East Melbourne,2023,Male,Age 20-24,168
+East Melbourne,2023,Female,Age 25-29,463
+East Melbourne,2023,Female,Age 30-34,432
+East Melbourne,2023,Male,Age 30-34,333
+East Melbourne,2023,Male,Age 60-64,129
+East Melbourne,2023,Female,Age 75-79,40
+East Melbourne,2023,Female,Age 85+,30
+Kensington,2023,Female,Age 0-4,348
+Kensington,2023,Female,Age 10-14,145
+Kensington,2023,Male,Age 10-14,239
+Kensington,2023,Male,Age 15-19,105
+Kensington,2023,Male,Age 20-24,335
+Kensington,2023,Male,Age 25-29,740
+Kensington,2023,Female,Age 35-39,702
+Kensington,2023,Male,Age 35-39,715
+Kensington,2023,Female,Age 40-44,540
+Kensington,2023,Female,Age 45-49,344
+Kensington,2023,Male,Age 50-54,181
+Kensington,2023,Male,Age 60-64,219
+Kensington,2023,Female,Age 65-69,192
+Kensington,2023,Male,Age 75-79,75
+Melbourne (CBD),2023,Female,Age 0-4,465
+Melbourne (CBD),2023,Female,Age 5-9,172
+Melbourne (CBD),2023,Male,Age 10-14,109
+Melbourne (CBD),2023,Female,Age 15-19,1275
+Melbourne (CBD),2023,Male,Age 20-24,5897
+Melbourne (CBD),2023,Male,Age 30-34,3593
+Melbourne (CBD),2023,Female,Age 45-49,707
+Melbourne (CBD),2023,Male,Age 55-59,445
+Melbourne (CBD),2023,Male,Age 60-64,379
+Melbourne (CBD),2023,Female,Age 70-74,236
+Melbourne (CBD),2023,Male,Age 70-74,253
+Melbourne (Remainder),2023,Female,Age 0-4,46
+Melbourne (Remainder),2023,Female,Age 5-9,21
+Melbourne (Remainder),2023,Female,Age 20-24,98
+Melbourne (Remainder),2023,Male,Age 20-24,97
+Melbourne (Remainder),2023,Male,Age 25-29,175
+Melbourne (Remainder),2023,Female,Age 30-34,238
+Melbourne (Remainder),2023,Male,Age 30-34,223
+Melbourne (Remainder),2023,Female,Age 35-39,159
+Melbourne (Remainder),2023,Male,Age 35-39,205
+Melbourne (Remainder),2023,Female,Age 40-44,150
+Melbourne (Remainder),2023,Female,Age 45-49,52
+Melbourne (Remainder),2023,Male,Age 45-49,59
+Melbourne (Remainder),2023,Male,Age 50-54,72
+Melbourne (Remainder),2023,Male,Age 55-59,76
+Melbourne (Remainder),2023,Female,Age 65-69,115
+Melbourne (Remainder),2023,Male,Age 65-69,149
+Melbourne (Remainder),2023,Female,Age 70-74,117
+Melbourne (Remainder),2023,Male,Age 70-74,122
+Melbourne (Remainder),2023,Male,Age 75-79,55
+North Melbourne,2023,Female,Age 5-9,227
+North Melbourne,2023,Female,Age 10-14,264
+North Melbourne,2023,Female,Age 25-29,1508
+North Melbourne,2023,Female,Age 40-44,627
+North Melbourne,2023,Male,Age 50-54,292
+North Melbourne,2023,Male,Age 55-59,253
+North Melbourne,2023,Female,Age 75-79,84
+North Melbourne,2023,Male,Age 85+,15
+Parkville,2023,Female,Age 0-4,152
+Parkville,2023,Male,Age 0-4,175
+Parkville,2023,Female,Age 5-9,72
+Parkville,2023,Male,Age 5-9,86
+Parkville,2023,Male,Age 10-14,92
+Parkville,2023,Male,Age 30-34,449
+Parkville,2023,Male,Age 40-44,127
+Parkville,2023,Female,Age 45-49,99
+Parkville,2023,Female,Age 50-54,137
+Parkville,2023,Female,Age 65-69,61
+Parkville,2023,Female,Age 70-74,121
+Parkville,2023,Female,Age 75-79,79
+Parkville,2023,Female,Age 80-84,48
+Parkville,2023,Male,Age 80-84,33
+Parkville,2023,Female,Age 85+,56
+Port Melbourne,2023,Female,Age 5-9,0
+Port Melbourne,2023,Female,Age 10-14,0
+Port Melbourne,2023,Male,Age 30-34,0
+Port Melbourne,2023,Male,Age 40-44,0
+Port Melbourne,2023,Male,Age 50-54,0
+Port Melbourne,2023,Female,Age 55-59,0
+Port Melbourne,2023,Male,Age 75-79,0
+Port Melbourne,2023,Female,Age 80-84,0
+Port Melbourne,2023,Female,Age 85+,0
+South Yarra,2023,Female,Age 25-29,289
+South Yarra,2023,Female,Age 40-44,77
+South Yarra,2023,Female,Age 55-59,99
+South Yarra,2023,Female,Age 60-64,111
+South Yarra,2023,Male,Age 60-64,130
+South Yarra,2023,Female,Age 70-74,166
+South Yarra,2023,Male,Age 75-79,72
+South Yarra,2023,Male,Age 80-84,13
+Southbank,2023,Female,Age 0-4,323
+Southbank,2023,Female,Age 5-9,129
+Southbank,2023,Male,Age 5-9,112
+Southbank,2023,Female,Age 10-14,91
+Southbank,2023,Female,Age 15-19,319
+Southbank,2023,Male,Age 15-19,288
+Southbank,2023,Male,Age 20-24,1794
+Southbank,2023,Male,Age 25-29,2544
+Southbank,2023,Female,Age 35-39,1169
+Southbank,2023,Female,Age 40-44,582
+Southbank,2023,Male,Age 40-44,778
+Southbank,2023,Female,Age 50-54,384
+Southbank,2023,Male,Age 55-59,425
+Southbank,2023,Female,Age 65-69,265
+Southbank,2023,Male,Age 70-74,232
+Southbank,2023,Male,Age 85+,27
+West Melbourne (Industrial),2023,Male,Age 10-14,0
+West Melbourne (Industrial),2023,Male,Age 15-19,0
+West Melbourne (Industrial),2023,Female,Age 20-24,0
+West Melbourne (Industrial),2023,Male,Age 20-24,0
+West Melbourne (Industrial),2023,Male,Age 30-34,0
+West Melbourne (Industrial),2023,Female,Age 40-44,0
+West Melbourne (Industrial),2023,Male,Age 40-44,0
+West Melbourne (Industrial),2023,Female,Age 45-49,0
+West Melbourne (Industrial),2023,Female,Age 85+,0
+West Melbourne (Residential),2023,Male,Age 5-9,55
+West Melbourne (Residential),2023,Female,Age 10-14,65
+West Melbourne (Residential),2023,Male,Age 15-19,71
+West Melbourne (Residential),2023,Female,Age 20-24,593
+West Melbourne (Residential),2023,Female,Age 30-34,764
+West Melbourne (Residential),2023,Female,Age 55-59,108
+City of Melbourne,2023,Total,Age 30-34,24420
+City of Melbourne,2023,Total,Age 50-54,5181
+City of Melbourne,2023,Total,Age 65-69,3849
+City of Melbourne,2023,Total,Age 70-74,3448
+Carlton,2023,Total,Age 20-24,5136
+Carlton,2023,Total,Age 50-54,501
+Docklands,2023,Total,Age 15-19,356
+Docklands,2023,Total,Age 35-39,1800
+Docklands,2023,Total,Age 40-44,1036
+Docklands,2023,Total,Age 50-54,859
+Docklands,2023,Total,Age 75-79,91
+Docklands,2023,Total,Age 80-84,13
+East Melbourne,2023,Total,Age 0-4,126
+East Melbourne,2023,Total,Age 10-14,30
+East Melbourne,2023,Total,Age 25-29,829
+East Melbourne,2023,Total,Age 55-59,281
+East Melbourne,2023,Total,Age 60-64,324
+East Melbourne,2023,Total,Age 70-74,335
+Kensington,2023,Total,Age 10-14,385
+Kensington,2023,Total,Age 15-19,183
+Kensington,2023,Total,Age 30-34,1745
+Kensington,2023,Total,Age 45-49,717
+Kensington,2023,Total,Age 65-69,310
+Kensington,2023,Total,Age 75-79,140
+Kensington,2023,Total,Age 80-84,92
+Melbourne (CBD),2023,Total,Age 5-9,338
+Melbourne (CBD),2023,Total,Age 10-14,199
+Melbourne (CBD),2023,Total,Age 20-24,12501
+Melbourne (CBD),2023,Total,Age 30-34,6964
+Melbourne (CBD),2023,Total,Age 40-44,1823
+Melbourne (CBD),2023,Total,Age 50-54,952
+Melbourne (CBD),2023,Total,Age 70-74,490
+Melbourne (Remainder),2023,Total,Age 5-9,38
+Melbourne (Remainder),2023,Total,Age 20-24,195
+Melbourne (Remainder),2023,Total,Age 50-54,136
+Melbourne (Remainder),2023,Total,Age 60-64,213
+Melbourne (Remainder),2023,Total,Age 70-74,239
+Melbourne (Remainder),2023,Total,Age 80-84,59
+Melbourne (Remainder),2023,Total,Age 85+,47
+North Melbourne,2023,Total,Age 5-9,473
+North Melbourne,2023,Total,Age 30-34,2137
+Parkville,2023,Total,Age 5-9,158
+Parkville,2023,Total,Age 10-14,176
+Parkville,2023,Total,Age 35-39,625
+Parkville,2023,Total,Age 50-54,255
+Parkville,2023,Total,Age 55-59,204
+Parkville,2023,Total,Age 65-69,175
+Parkville,2023,Total,Age 70-74,216
+Port Melbourne,2023,Total,Age 5-9,0
+Port Melbourne,2023,Total,Age 10-14,0
+Port Melbourne,2023,Total,Age 45-49,0
+Port Melbourne,2023,Total,Age 50-54,0
+Port Melbourne,2023,Total,Age 55-59,0
+Port Melbourne,2023,Total,Age 70-74,0
+Port Melbourne,2023,Total,Age 75-79,0
+Port Melbourne,2023,Total,Age 80-84,0
+Port Melbourne,2023,Total,Age 85+,0
+South Yarra,2023,Total,Age 30-34,603
+South Yarra,2023,Total,Age 35-39,388
+South Yarra,2023,Total,Age 45-49,228
+South Yarra,2023,Total,Age 50-54,140
+South Yarra,2023,Total,Age 55-59,190
+South Yarra,2023,Total,Age 70-74,291
+South Yarra,2023,Total,Age 80-84,27
+Southbank,2023,Total,Age 35-39,2611
+Southbank,2023,Total,Age 40-44,1360
+Southbank,2023,Total,Age 45-49,924
+Southbank,2023,Total,Age 55-59,813
+Southbank,2023,Total,Age 60-64,607
+Southbank,2023,Total,Age 70-74,461
+Southbank,2023,Total,Age 75-79,198
+West Melbourne (Industrial),2023,Total,Age 5-9,0
+West Melbourne (Industrial),2023,Total,Age 20-24,0
+West Melbourne (Industrial),2023,Total,Age 25-29,0
+West Melbourne (Industrial),2023,Total,Age 50-54,0
+West Melbourne (Industrial),2023,Total,Age 60-64,0
+West Melbourne (Industrial),2023,Total,Age 65-69,0
+West Melbourne (Industrial),2023,Total,Age 85+,0
+West Melbourne (Residential),2023,Total,Age 0-4,272
+West Melbourne (Residential),2023,Total,Age 15-19,155
+West Melbourne (Residential),2023,Total,Age 20-24,1198
+West Melbourne (Residential),2023,Total,Age 45-49,338
+West Melbourne (Residential),2023,Total,Age 50-54,243
+West Melbourne (Residential),2023,Total,Age 55-59,187
+West Melbourne (Residential),2023,Total,Age 80-84,3
+West Melbourne (Residential),2023,Total,Age 85+,6
+City of Melbourne,2023,Male,Average age,33
+Carlton,2023,Male,Average age,30
+Carlton,2023,Total,Average age,30
+Docklands,2023,Female,Average age,34
+Docklands,2023,Total,Average age,35
+Kensington,2023,Male,Average age,34
+Kensington,2023,Total,Average age,35
+Melbourne (Remainder),2023,Male,Average age,44
+Melbourne (Remainder),2023,Total,Average age,45
+North Melbourne,2023,Female,Average age,33
+North Melbourne,2023,Total,Average age,33
+Parkville,2023,Male,Average age,32
+Port Melbourne,2023,Male,Average age,38
+Southbank,2023,Male,Average age,34
+City of Melbourne,2023,Not applicable,Total population,158123
+Docklands,2023,Not applicable,Total population,16437
+Kensington,2023,Not applicable,Total population,11167
+North Melbourne,2023,Not applicable,Total population,16035
+Parkville,2023,Not applicable,Total population,7948
+Southbank,2023,Not applicable,Total population,23284
+West Melbourne (Industrial),2023,Not applicable,Total population,0
+West Melbourne (Residential),2023,Not applicable,Total population,8102
