@@ -1,1 +1,0 @@
-. ./unimelb-comp90024-2023-grp-80-openrc.sh; ansible-playbook create_instance_and_volume.yml
