@@ -34,7 +34,7 @@ To start the server, run the python script from your terminal:
 
 ```sh
 python script_name.py
-
+```
 
 API Endpoints
 The project provides a wide array of endpoints:
