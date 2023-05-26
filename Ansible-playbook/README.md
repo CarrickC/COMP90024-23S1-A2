@@ -1,6 +1,6 @@
 ## Ansible Playbook Overview
 
-- **Common** Common files which used for other ansible-playbook
+- **Common** Common files which used for other ansible-playbook.
 - **create_instance_and_volume** Establish four new instances with appropriate storage volume and security groups.
 - **mount_volume** Mount and configure storage volumes on the instances.
 - **git_clone** Clone necessary script files from GitHub.
