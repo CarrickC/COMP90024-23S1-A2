@@ -57,16 +57,17 @@ Mastodon Data Endpoints
 - **sentiment_distribution**: Fetches the distribution of sentiment values from the Mastodon social media posts stored in the 'mastodon_comb' database.
 - **followers_scatter, /following_scatter**: Retrieve data for creating scatter plots of the number of followers/followings against the toxicity of posts for users in the 'mastodon_comb' database.
 - **top_word_counts_mastodon**: Retrieves the most common words in the text of the Mastodon posts stored in the 'mastodon_comb' database.
+
 All these endpoints return data in the JSON format. Each resource is defined as a class that inherits from Resource, a class provided by the Flask-RESTful library.
 
-Configuration
+## Configuration
 The CouchDB configuration is contained in a configuration file couchdb_config.ini which needs to be created and should look like this:
 
-ini
-Copy code
+```ini
 [couchdb]
 nodes = node1,node2,node3
 Replace node1,node2,node3 with your CouchDB nodes.
+```
 
 Database Authentication
 For authentication, the script uses admin and password. Change these to your CouchDB credentials.
