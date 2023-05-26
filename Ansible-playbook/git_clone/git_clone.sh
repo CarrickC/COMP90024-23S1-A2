@@ -1,1 +1,0 @@
-ansible-playbook -i ./hosts git_clone.yml
