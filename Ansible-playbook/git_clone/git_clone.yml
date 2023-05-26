@@ -1,0 +1,11 @@
+- name: git clone
+  hosts: all
+  vars_files:
+    - vars.yml
+  tasks:
+    - name: Clone GitHub repository
+      git:
+        repo: "https://{{ github_username }}:{{ github_token }}@github.com/CarrickC/COMP90024-23S1-A2.git"
+        dest: /home/ubuntu/git_clone
+        single_branch: yes
+        version: main

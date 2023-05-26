@@ -1,0 +1,68 @@
+- name: execute in localhost
+  hosts: localhost
+  gather_facts: no
+  vars_files:
+    - vars.yml
+  vars:
+    inventory: ""
+  tasks:
+    - name: Install openstacksdk
+      pip:
+        name: openstacksdk==0.62.0
+        state: present
+
+    - name: Create MRC instances
+      openstack.cloud.server:
+        auto_ip: false
+        availability_zone: "{{availability_zone}}"
+        flavor: "{{instance_flavor}}"
+        image: "{{instance_image}}"
+        key_name: "{{instance_key_name}}"
+        network: "{{instance_network}}"
+        name: "your_instance{{ item }}"
+        security_groups: [ "default","ssh","cochdb","http","docker","allow 8081 for frontend in docker","8082","allwo 8080 for backend in docker","allow 5985 for couchdb in docker","rdp","9100-9200", "allow 4369" ]
+        state: present
+        timeout: 600
+        wait: yes
+      register: my_instance
+      loop: "{{ range(1, instance_count + 1)|list }}"
+
+    - name: Add instance IP to inventory
+      set_fact:
+        inventory: "{{ inventory + my_instance.results[item | int - 1].server.public_v4 + '\n' }}"
+      loop: "{{ range(1, instance_count + 1)|list }}"
+
+    - name: Print instance results
+      debug:
+        var: my_instance.results
+
+    - name: Install shade
+      pip:
+        name: shade
+        state: present
+
+    - name: Create volumes
+      openstack.cloud.volume:
+        display_name: "my_volume{{ item }}"
+        size: 100
+        state: present
+        availability_zone: "{{availability_zone}}"
+      register: my_volume
+      loop: "{{ range(1, instance_count + 1)|list }}"
+
+    - name: Print volume results
+      debug:
+        var: my_volume.results
+
+    - name: Attach volume to the instances
+      openstack.cloud.server_volume:
+        state: present
+        server: "{{ my_instance.results[item | int - 1].server.name }}"
+        volume: "{{ my_volume.results[item | int - 1].volume.id }}"
+      loop: "{{ range(1, instance_count + 1)|list }}"
+
+    - name: Write inventory to hosts file
+      copy:
+        content: "{{ inventory }}"
+        dest: "./hosts"
+

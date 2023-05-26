@@ -1,0 +1,29 @@
+- name: Deploy Docker frontend
+  hosts: all
+  become: yes
+  gather_facts: yes
+  vars_files:
+    - vars.yml
+  tasks:
+    - name: Remove existing frontend Docker image
+      community.docker.docker_image:
+        name: frontend
+        state: absent
+      when: "'worker' in group_names or 'manager' in group_names"
+
+    - name: Build frontend Docker image
+      community.docker.docker_image:
+        name: frontend
+        build:
+          path: /home/ubuntu/90024_A2
+          dockerfile: Dockerfile_frontend
+          pull: no
+        source: build
+        state: present
+      when: "'worker' in group_names or 'manager' in group_names"
+
+    - name: Deploy Docker stack
+      ansible.builtin.command:
+        cmd: docker stack deploy -c /home/ubuntu/90024_A2/docker-compose.yml frontend_stack
+      run_once: true
+      delegate_to: "{{ groups['manager'][0] }}"

@@ -1,0 +1,1 @@
+ansible-playbook -i ./hosts mount_volume.yml
