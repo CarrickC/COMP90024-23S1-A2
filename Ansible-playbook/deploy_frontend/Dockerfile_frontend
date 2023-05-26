@@ -1,17 +1,17 @@
-# 使用Nginx作为基础镜像
+# Use Nginx as base image
 FROM nginx:alpine
 
-# 删除nginx 默认配置
+# Remove Nginx's default configuration
 RUN rm /etc/nginx/conf.d/default.conf
 
-# 添加我们自己的配置
+# Add our own configuration
 COPY nginx.conf /etc/nginx/conf.d
 
-# 将构建的静态文件复制到 Nginx 的默认文件夹
+# Copy the built static files into Nginx's default folder
 COPY ./dist /usr/share/nginx/html
 
-# 容器暴露80端口，使其可以接收请求
+# Expose port 80 on the container to receive requests
 EXPOSE 80
 
-# 启动Nginx服务
+# Start the Nginx service
 CMD ["nginx", "-g", "daemon off;"]
