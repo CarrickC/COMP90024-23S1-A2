@@ -19,10 +19,10 @@ Below is a brief description of each file:
 
 - **landmarks-and-places-of-interest-including-schools-theatres-health-services-spor.xlsx**: This Excel file lists landmarks and places of interest in a certain area, including schools, theatres, health services, and sports facilities.
 
-off-street-car-parks-with-capacity-and-type.csv: This CSV file contains data on off-street car parks, including information about their capacity and type.
+- **off-street-car-parks-with-capacity-and-type.csv**: This CSV file contains data on off-street car parks, including information about their capacity and type.
 
-public-barbecues.csv: This CSV file contains data on the locations of public barbecues.
+- **public-barbecues.csv**: This CSV file contains data on the locations of public barbecues.
 
-sa2_g36_weekly_rent_by_landlord_type_census_2016-314532625477305047.xlsx: This Excel file contains data from the 2016 Census on weekly rent payments, broken down by landlord type at the Statistical Area Level 2 (SA2).
+- **sa2_g36_weekly_rent_by_landlord_type_census_2016-314532625477305047.xlsx**: This Excel file contains data from the 2016 Census on weekly rent payments, broken down by landlord type at the Statistical Area Level 2 (SA2).
 
 For any further questions or clarifications about the data, please reach out to the data team.
