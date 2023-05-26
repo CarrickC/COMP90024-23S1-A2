@@ -1,0 +1,21 @@
+- name: Mount volumes on instances
+  hosts: all
+  become: yes
+  gather_facts: no
+  vars_files:
+    - vars.yml
+  tasks:
+    - name: Format the volume
+      ansible.builtin.command: mkfs -t ext4 /dev/vdb
+
+    - name: Create directory
+      ansible.builtin.file:
+        path: /home/ubuntu/90024_A2
+        state: directory
+
+    - name: Mount volume
+      ansible.builtin.mount:
+        path: /home/ubuntu/90024_A2
+        src: /dev/vdb
+        fstype: ext4
+        state: mounted

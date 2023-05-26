@@ -1,0 +1,1 @@
+ansible-playbook -i ./hosts docker_swarm.yml
