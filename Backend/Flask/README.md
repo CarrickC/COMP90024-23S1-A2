@@ -40,23 +40,23 @@ API Endpoints
 The project provides a wide array of endpoints:
 
 Twitter Endpoints
-/geojson: Returns GeoJSON data representing the Greater Melbourne area.
-/average_toxicity: Returns a JSON object with the average toxicity of tweets for each suburb in Greater Melbourne.
-/global_autocorrelation: Returns the global Moran's I, an indicator of spatial autocorrelation, based on the average tweet toxicity. It can take two optional parameters - 'rule' to choose the contiguity rule ('queen' or 'rook') and 'alpha' for the significance level.
-/local_autocorrelation: Returns a JSON object with Local Moran's I, an indicator of local spatial autocorrelation, based on the average tweet toxicity for each suburb in Greater Melbourne. It can take two optional parameters - 'rule' to choose the contiguity rule ('queen' or 'rook') and 'alpha' for the significance level.
-/significant_local_autocorrelation: Returns a JSON object indicating whether each suburb in Greater Melbourne shows significant local spatial autocorrelation of tweet toxicity, based on the provided significance level ('alpha') and contiguity rule ('rule').
+- **geojson**: Returns GeoJSON data representing the Greater Melbourne area.
+- **average_toxicity**: Returns a JSON object with the average toxicity of tweets for each suburb in Greater Melbourne.
+- **global_autocorrelation**: Returns the global Moran's I, an indicator of spatial autocorrelation, based on the average tweet toxicity. It can take two optional parameters - 'rule' to choose the contiguity rule ('queen' or 'rook') and 'alpha' for the significance level.
+- **local_autocorrelation**: Returns a JSON object with Local Moran's I, an indicator of local spatial autocorrelation, based on the average tweet toxicity for each suburb in Greater Melbourne. It can take two optional parameters - 'rule' to choose the contiguity rule ('queen' or 'rook') and 'alpha' for the significance level.
+- **significant_local_autocorrelation**: Returns a JSON object indicating whether each suburb in Greater Melbourne shows significant local spatial autocorrelation of tweet toxicity, based on the provided significance level ('alpha') and contiguity rule ('rule').
 SUDO Data Endpoints
-/crime_data: Returns all documents from the 'sudocrime' database. Each document presumably contains information about a specific crime.
-/rent_data: Calculates the average rent for different areas by aggregating data from the 'sudorent' database. The calculation is based on ranges of rent prices and the number of rentals in each range.
-/total_value_by_age: Returns the total population for different geographical areas by age group, based on data from the 'sudopopulation' database.
-/total_value_by_gender: Aggregates population data by gender.
-/total_patrons_by_area: Retrieves the total number of bar patrons by area, based on data from the 'sudobars' database.
-/total_value_by_jobsforecasts: Fetches the total job forecasts by area, based on data from the 'sudojobsforecasts' database.
-/total_spaces_by_area_and_type: Retrieves the total number of parking spaces by area and type, based on data from the 'sudocarpark' database.
+- **crime_data**: Returns all documents from the 'sudocrime' database. Each document presumably contains information about a specific crime.
+- **rent_data**: Calculates the average rent for different areas by aggregating data from the 'sudorent' database. The calculation is based on ranges of rent prices and the number of rentals in each range.
+- **total_value_by_age**: Returns the total population for different geographical areas by age group, based on data from the 'sudopopulation' database.
+- **total_value_by_gender**: Aggregates population data by gender.
+- **total_patrons_by_area**: Retrieves the total number of bar patrons by area, based on data from the 'sudobars' database.
+- **total_value_by_jobsforecasts**: Fetches the total job forecasts by area, based on data from the 'sudojobsforecasts' database.
+- **total_spaces_by_area_and_type**: Retrieves the total number of parking spaces by area and type, based on data from the 'sudocarpark' database.
 Mastodon Data Endpoints
-/sentiment_distribution: Fetches the distribution of sentiment values from the Mastodon social media posts stored in the 'mastodon_comb' database.
-/followers_scatter, /following_scatter: Retrieve data for creating scatter plots of the number of followers/followings against the toxicity of posts for users in the 'mastodon_comb' database.
-/top_word_counts_mastodon: Retrieves the most common words in the text of the Mastodon posts stored in the 'mastodon_comb' database.
+- **sentiment_distribution**: Fetches the distribution of sentiment values from the Mastodon social media posts stored in the 'mastodon_comb' database.
+- **followers_scatter, /following_scatter**: Retrieve data for creating scatter plots of the number of followers/followings against the toxicity of posts for users in the 'mastodon_comb' database.
+- **top_word_counts_mastodon**: Retrieves the most common words in the text of the Mastodon posts stored in the 'mastodon_comb' database.
 All these endpoints return data in the JSON format. Each resource is defined as a class that inherits from Resource, a class provided by the Flask-RESTful library.
 
 Configuration
