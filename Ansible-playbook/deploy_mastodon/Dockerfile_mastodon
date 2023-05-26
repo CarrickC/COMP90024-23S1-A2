@@ -1,0 +1,26 @@
+# 使用官方 Python 3.9 镜像作为基础镜像
+FROM python:3.9-slim-buster
+
+# 设置工作目录
+WORKDIR /app
+
+# 更新并安装依赖
+RUN apt-get update && apt-get install -y \
+    gcc g++ --no-install-recommends && \
+    rm -rf /var/lib/apt/lists/*
+
+# 安装项目需要的依赖
+RUN pip install --no-cache-dir mastodon.py couchdb python-dotenv nltk transformers torch langdetect beautifulsoup4 emoji
+
+# Download the NLTK stopwords resource
+RUN python -m nltk.downloader stopwords punkt
+
+# 将需要的 Python 脚本添加到容器中
+COPY Mastodon_Crawl_1.py Mastodon_Crawl_2.py Mastodon_Crawl_3.py start.sh /app/
+
+# 添加执行权限给 shell 脚本
+RUN chmod +x /app/start.sh
+
+# 运行爬虫命令
+CMD ["/app/start.sh"]
+
