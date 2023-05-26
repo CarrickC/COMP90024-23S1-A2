@@ -33,7 +33,7 @@ Running the Server
 To start the server, run the python script from your terminal:
 
 ```sh
-python script_name.py
+python app22.py
 ```
 
 ## API Endpoints
