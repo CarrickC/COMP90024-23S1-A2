@@ -51,6 +51,7 @@ This is a key file for Node.js projects, and it's necessary for managing depende
 
 
 System deployment
+
 The deployment portion of our project utilizes the Ansible tool. It automates the deployment process of
 applications, ensuring consistency and reproducibility across various environments and platforms. Since we
 need to deploy all environments and applications across four instances, Ansible reduces the risk of errors and
