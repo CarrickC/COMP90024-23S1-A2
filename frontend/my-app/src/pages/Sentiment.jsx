@@ -1,3 +1,7 @@
+/*
+ * @author: Hanchen Cai <hanchenc@student.unimelb.edu.au>
+ */
+
 import React from "react";
 import Map from "@/components/Map";
 import { Row, Col } from "antd";
