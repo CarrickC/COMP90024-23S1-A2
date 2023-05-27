@@ -1,4 +1,4 @@
-# Mastodon Crawler README
+# Mastodon Harvesters README
 
 ## Description
 
