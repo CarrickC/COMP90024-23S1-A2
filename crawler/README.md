@@ -31,10 +31,11 @@ python crawler.py
 ## How It Works
 The script logs into your Mastodon account and listens for new statuses on the public timeline. When it receives a status, it adds it to a buffer. When the buffer size reaches 50, the script processes the statuses in the buffer as follows:
 
-It removes HTML tags, URLs, emojis, and non-alphanumeric characters.
-It tokenizes the text and removes English stop words, punctuation, and applies lemmatization.
-It calculates the toxicity of the text using a pre-trained model.
-It calculates the sentiment of the text using a pre-trained model from HuggingFace API.
+- It removes HTML tags, URLs, emojis, and non-alphanumeric characters.
+- It tokenizes the text and removes English stop words, punctuation, and applies lemmatization.
+- It calculates the toxicity of the text using a pre-trained model.
+- It calculates the sentiment of the text using a pre-trained model from HuggingFace API.
+
 After processing, the script checks if the status is in English and if so, it saves the processed status to the CouchDB database along with followers and following count of the user who posted it.
 
 ## Caution
