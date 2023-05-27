@@ -1,5 +1,8 @@
+## Description
+
 A normal react app created by vite.
 
+## Setup
 To run the app locally, first run ```cd my-app```
 
 If you have not installed nodejs and yarn, please install nodejs and then run ```npm install -g yarn```
