@@ -2,7 +2,7 @@
 
 ## Description
 
-This script is a Mastodon crawler that collects statuses from the public timeline, processes the statuses for Natural Language Processing (NLP), and saves them into a CouchDB database. The script uses several pre-trained models from the transformers library to analyze the sentiment and toxicity of the statuses. It also makes use of the HuggingFace API for sentiment classification. The script is designed to be robust and tries to handle all kinds of unexpected errors gracefully.
+This script is a Mastodon harvesters that collects statuses from the public timeline, processes the statuses for Natural Language Processing (NLP), and saves them into a CouchDB database. The script uses several pre-trained models from the transformers library to analyze the sentiment and toxicity of the statuses. It also makes use of the HuggingFace API for sentiment classification. The script is designed to be robust and tries to handle all kinds of unexpected errors gracefully.
 
 ## Setup and Installation
 Before running this script, make sure you have the required dependencies installed. You can install the necessary packages using pip:
