@@ -8,6 +8,16 @@ Description: main function
 import json, os, couchdb
 import pandas as pd
 import warnings
+import re
+from transformers import pipeline
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+import torch
+import geopandas as gpd
+from shapely.geometry import Point
+from langdetect import detect
+import time
+
+
 
 # Ignore all warnings
 warnings.filterwarnings("ignore")
@@ -33,10 +43,6 @@ else:
 # In[ ]:
 
 
-import re
-from transformers import pipeline
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
-import torch
 
 class ToxicCommentClassifier:
     def __init__(self, model_name):
@@ -82,10 +88,6 @@ def safe_json_loads(json_string):
 # In[ ]:
 
 
-import geopandas as gpd
-from shapely.geometry import Point
-from langdetect import detect
-import time
 
 # Initialize the classifiers
 toxic_comment_classifier = ToxicCommentClassifier("martin-ha/toxic-comment-model")
