@@ -1,3 +1,10 @@
+"""
+Author:      Edward Liu
+Student id:  913500
+Date:        2023-5-26 08:36:06
+Description: main function
+"""
+
 from flask import Flask, render_template, request
 from flask_restful import Api, Resource
 import couchdb
