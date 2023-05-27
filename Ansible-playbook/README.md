@@ -1,6 +1,6 @@
-## Ansible Playbook Overview
+# Ansible Playbook Overview
 
-### Intorduction
+## Intorduction
 
 Following is what the Ansible playbook is used for this project:
 
@@ -14,7 +14,7 @@ Following is what the Ansible playbook is used for this project:
 8. Implement Docker Swarm, designating instance 1 as the manager and instances 2, 3, and 4 as workers. Utilize Docker Swarm to create a frontend service.
 
 
-### Files description
+## Files description
 
 - **Common**: Common files which used for other ansible-playbook.
 - **create_instance_and_volume**: Establish four new instances with appropriate storage volume and security groups.
