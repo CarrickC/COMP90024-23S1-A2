@@ -1,3 +1,7 @@
+/*
+ * @author: Hanchen Cai <hanchenc@student.unimelb.edu.au>
+ */
+
 import React from "react";
 import { LikeOutlined } from "@ant-design/icons";
 import { Col, Row, Statistic } from "antd";
