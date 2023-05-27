@@ -1,7 +1,31 @@
+"""
+Author:      Edward Liu
+Student id:  913500
+Date:        2023-5-26 08:36:06
+Description: main function
+"""
+
+
 from mastodon import Mastodon, StreamListener
 import json, os, couchdb
 import time
 from dotenv import load_dotenv
+
+import re
+from transformers import pipeline
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+import torch
+from langdetect import detect
+
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from collections import Counter
+from bs4 import BeautifulSoup
+import re
+from datetime import datetime
+from nltk.stem import WordNetLemmatizer
+import string
+import emoji
 
 load_dotenv()
 
@@ -36,21 +60,6 @@ m = Mastodon(
 ##############
 ##############
 
-import re
-from transformers import pipeline
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
-import torch
-from langdetect import detect
-
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
-from collections import Counter
-from bs4 import BeautifulSoup
-import re
-from datetime import datetime
-from nltk.stem import WordNetLemmatizer
-import string
-import emoji
 
 lemmatizer = WordNetLemmatizer()
 stop_words = set(stopwords.words('english'))
