@@ -1,3 +1,7 @@
+/*
+ * @author: Hanchen Cai <hanchenc@student.unimelb.edu.au>
+ */
+
 import Map from "@/components/Map";
 import Chart from "@/components/Chart";
 import { Row, Col } from "antd";
