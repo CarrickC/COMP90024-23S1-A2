@@ -31,7 +31,7 @@ The team is developing a Cloud-based solution exploiting cloud instances on MRC 
 The project is deployed using Ansible, automating the process of applications deployment across four instances.
 
 ### Ansible Playbook Overview
-![image](https://github.com/CarrickC/COMP90024-23S1-A2/assets/131973111/16bef5b7-3281-4c23-95a1-3235f447a482)
+![Ansible Playbook](https://raw.githubusercontent.com/CarrickC/COMP90024-23S1-A2/711ffb6235972e5bffdd73ce2883ac81d22c6a81/Ansible-playbook/Ansible-playbook.png)
 
 1. Establish four new instances with appropriate storage volume and security groups.
 2. Mount and configure storage volumes on the instances.
