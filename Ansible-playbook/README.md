@@ -2,7 +2,7 @@
 
 ## Intorduction
 
-Following is how the Ansible playbook to be used for this project:
+Following is how the Ansible playbook used for this project:
 
 1. Establish four new instances, each with the appropriate selection of storage volume and security groups.
 2. Mounting and conﬁguration of storage volumes on the relative instances.
