@@ -1,3 +1,7 @@
+/*
+ * @author: Hanchen Cai <hanchenc@student.unimelb.edu.au>
+ */
+
 import { toJS } from "mobx";
 
 const getChartOptions = (type, dataStore) => {
