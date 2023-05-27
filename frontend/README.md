@@ -1,4 +1,4 @@
-## What is this,
+## What is this
 
 A normal react app created by vite, visualizing the data analysis for comp90024 team80.
 
