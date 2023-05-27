@@ -21,7 +21,6 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from collections import Counter
 from bs4 import BeautifulSoup
-import re
 from datetime import datetime
 from nltk.stem import WordNetLemmatizer
 import string
