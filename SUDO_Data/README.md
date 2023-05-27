@@ -1,5 +1,5 @@
 # Repository Readme
-This repository contains a collection of data files related to various socio-economic and demographic characteristics. All the data files were last updated 1 hour ago as part of the SUDO data update.
+This repository contains a collection of data files related to various socio-economic and demographic characteristics. 
 
 Below is a brief description of each file:
 
