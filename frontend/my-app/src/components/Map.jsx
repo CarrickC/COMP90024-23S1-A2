@@ -1,3 +1,7 @@
+/*
+ * @author: Hanchen Cai <hanchenc@student.unimelb.edu.au>
+ */
+
 // @ts-nocheck
 import React, { useEffect, useRef, useState } from "react";
 import * as echarts from "echarts";
